@@ -506,7 +506,7 @@
         {%if partyReferenceRelevantParties|length>0%}
         <h5><strong>Representative </strong>has the meaning given to it in Clause  ~~refVtwentythreepointeighteenArefV~~   (<em>Representative</em>).</h5>{%endif%}
         
-        <h5><strong>Reserved Matter </strong>means each matter specified in Schedule 2 (<em>Reserved Matters</em>){%if conRadioHowManyListsOfReservedMatterRightsWillTheSHAInclude=="2"%}i.e. the Shareholder Reserved Matters and Special Matters{%elif conRadioHowManyListsOfReservedMatterRightsWillTheSHAInclude=="3"%}i.e. the Shareholder Reserved Matters, Special Matters and Other Matters {% endif %}.</h5>
+        <h5><strong>Reserved Matter </strong>means each matter specified in Schedule 2 (<em>Reserved Matters</em>){%if conRadioHowManyListsOfReservedMatterRightsWillTheSHAInclude=="2" or conRadioHowManyListsOfReservedMatterRightsWillTheSHAInclude=="3"%}i.e. the Shareholder Reserved Matters and Special Matters{%elif conRadioHowManyListsOfReservedMatterRightsWillTheSHAInclude=="3"%}i.e. the Shareholder Reserved Matters, Special Matters and Other Matters {% endif %}.</h5>
         
         <h5><strong>Restraint Area </strong>has the meaning given to it in Clause ~~refVfourteenpointoneCrefV~~ (<em>Terms used in this Clause</em>).</h5>
         <h5><strong>Restraint Period </strong>has the meaning given to it in Clause ~~refVfouteenpointoneDrefV~~ (<em>Terms used in this Clause</em>).</h5>
