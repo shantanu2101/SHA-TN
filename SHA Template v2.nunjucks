@@ -1695,12 +1695,17 @@
 </table>
 {#Schedule Two#}
 <div custom-style="Schedule Heading 1"><br/>Reserved Matters|| List of Reserved matters to be considered in the context of the specific transaction and tailored accordingly. In deciding whether to include each item on this list, consider whether each item is essential in order to protect the interest of True North, as excessive restrictions may hamper the efficient operation of the joint venture. However, if True North is taking only a minority stake in the Company, it may be preferable a more extensive list of reserved matters for its benefit. Conversely, if True North is taking a majority stake, a less extensive list of reserved matters may be preferable, and perhaps confining it to only those which are absolutely critical from a minority investor's perspective. However, on a 50:50 joint venture it might only be additional funding and alterations to the [Company's] constitution/share capital structure that True North might want to have as shareholder reserved matters, reflecting the fact that it has a large degree of control by virtue of its 50% (50 per cent) shareholding (i.e. not even an ordinary resolution can be passed without its consent).|| [Substantive Variable 3a: Start]</div>
-<div custom-style="Schedule Heading 2"><br/>Shareholder Reserved Matters [Substantive Variable 3a: End] [[Substantive Variable Rm: Start]</div>
+{%if conRadioHowManyListsOfReservedMatterRightsWillTheSHAInclude=="2" or conRadioHowManyListsOfReservedMatterRightsWillTheSHAInclude=="3"%}
+<div custom-style="Schedule Heading 2"><br/>Shareholder Reserved Matters [Substantive Variable 3a: End] [[Substantive Variable Rm: Start]</div>{% endif %}
+{% if radioIsTheFirstListOFReservedMattersAgreed == 'No' %}
 <div custom-style="Schedule Heading 6">Amendment of constitutional documents;</div>
 <div custom-style="Schedule Heading 6">Any increase, decrease, buy back, redemption, reduction or other alterations to its authorized share capital or issued share capital including any private placement or public issue of securities, issuance of securities with differential voting rights, issue or redemption of preference shares, grant of options for securities and issue of sweat equity, but excluding (i) any issue of New Securities contemplated in Clause 8 (<em>Further Funding</em>) and any change to authorized capital to facilitate such issue, (ii) any transfer of Shares that is permitted under Clause 9 (<em>Transfer of Securities</em>) or 10 (<em>Exit</em>) of this Agreement<strong>[Substantive Variable 5: Start]</strong>, and (iii) any [buy-back] of Shares specifically contemplated in this Agreement|| Bracketed portion to be included when a Shareholder has the right to require the Company to redeem or buy-back its shares under any circumstances.||
-    <strong>[Substantive Variable 5: End][Substantive Variable PS: Start]</strong>, and any redemption of preference shares specifically contemplated in this Agreement and/ or the Transaction Documents<strong>[Substantive Variable PS: End]</strong>;</div>
-<div custom-style="Schedule Heading 6">
-    <strong>[Substantive Variable ESOP: Start]</strong>Amendments to the ESOP Plan or <strong>[Substantive Variable ESOP: End]</strong>approval or adoption of, or variation to, any other stock option scheme, stock award scheme or other scheme for providing money to purchase or subscribe to Shares to be held in trust for employees, directors etc.;</div>
+    <strong>[Substantive Variable 5: End][Substantive Variable PS: Start]</strong>{%if radioWillThereBeAnyPreferenceSharesOutstandingOrIssued == 'Yes'%}, and any redemption of preference shares specifically contemplated in this Agreement and/ or the Transaction Documents<strong>[Substantive Variable PS: End]</strong>{% endif %};</div>
+    {%if radioShouldTheAgreementHaveProvisionsOnAgreedESOP == 'Yes'%}
+<div custom-style="Schedule Heading 6">Amendments to the ESOP Plan or approval or adoption of, or variation to, any other stock option scheme, stock award scheme or other scheme for providing money to purchase or subscribe to Shares to be held in trust for employees, directors etc.;</div>
+{%elif radioShouldTheAgreementHaveProvisionsOnAgreedESOP == 'No'%}
+<div custom-style="Schedule Heading 6">Approval or adoption of, or variation to, any other stock option scheme, stock award scheme or other scheme for providing money to purchase or subscribe to Shares to be held in trust for employees, directors etc.;</div>
+{% endif %}
 <div custom-style="Schedule Heading 6">Any merger, restructuring, amalgamation, demerger, reorganization, consolidation or any compromise or arrangement with creditors or shareholders;</div>
 <div custom-style="Schedule Heading 6">Sale, transfer, lease, license, assignment, exchange, creation of Encumbrance on or other disposition of assets (including Intellectual Property) [whose value is in excess of INR [<em>insert</em>] / otherwise than in the Ordinary Course of Business];</div>
 <div custom-style="Schedule Heading 6">Any material change in the nature or type of the Business;</div>
@@ -1732,18 +1737,33 @@
 <div custom-style="Schedule Heading 6"> [any other matters];|| To be added depending on the requirements of the transaction.|| or</div>
 <div custom-style="Schedule Heading 6">Delegation of authority or powers in relation to any of the aforementioned matters to any Person.] <strong>[SUBSTANTIVE VARIABLE RM: END]</strong>
 </div>
+{% elif radioIsTheFirstListOFReservedMattersAgreed == 'Yes' %}
+{{firstListOfReservedMatters}}
+{% endif %}
+{%if conRadioHowManyListsOfReservedMatterRightsWillTheSHAInclude=="2" or conRadioHowManyListsOfReservedMatterRightsWillTheSHAInclude=="3"%}
 <p>
     <strong>[Substantive Variable 3A: Start]</strong>
 </p>
 <div custom-style="Schedule Heading 2"><br/>Special Matters</div>
+{% if radioIsTheSecondListOFReservedMattersAgreed == 'No' %}
 <p>[<em>Insert</em>] <strong>[Substantive Variable 3A: End]</strong>
 </p>
+{% elif radioIsTheSecondListOFReservedMattersAgreed == 'Yes' %}
+{{secondListOfReservedMatters}}
+{% endif %}
+{% endif %}
+{%if conRadioHowManyListsOfReservedMatterRightsWillTheSHAInclude=="3"%}
 <p>
     <strong>[Substantive Variable 3B: Start]</strong>
 </p>
 <div custom-style="Schedule Heading 2"><br/>Other Matters</div>
+{% if radioIsTheThirdListOFReservedMattersAgreed == 'No' %}
 <p>[<em>Insert</em>] <strong>[Substantive Variable 3B: End]</strong>
 </p>
+{% elif radioIsTheThirdListOFReservedMattersAgreed == 'Yes' %}
+{{thirdListOfReservedMatters}}
+{% endif %}
+{% endif %}
 {#Schedule Three#}
 <div custom-style="Schedule Heading 1"><br/>Deed of Adherence</div>
 <p>
@@ -2038,10 +2058,12 @@
 <p>
     <strong>[Substantive Variable ESOP: Start]</strong>
 </p>
+{%if radioShouldTheAgreementHaveProvisionsOnAgreedESOP == 'Yes'%}
 {#Schedule Eight#}
 <div custom-style="Schedule Heading 1"><br/>ESOP Plan</div>
 <p>[<em>insert</em>]<strong> [Substantive Variable ESOP: End]</strong>
 </p>
+{% endif %}
 <p>
     <strong>IN WITNESS WHEREOF</strong>, this Agreement has been executed and delivered by the Parties on the day first mentioned above.</p>
 <p>For and on behalf of <strong>[<em>insert name of Party</em>]</strong>
