@@ -1569,3 +1569,476 @@
         <h5>Each Relevant Party shall, on the Agreement Date, deliver to [<em>insert</em>] a certified true copy of a power of attorney in favour of the Representative and in the agreed form authorising the Representative in accordance with this Clause ~~refVtwentythreepointeighteenrefV~~ (<em>Representative</em>).</h5>
         <h5>In the event of a conflict between any action undertaken by the Representative and any action undertaken by any individual Relevant Party, the action of the Representative will prevail and bind all Relevant Parties. </h5>
     {%endif%}
+
+{#Schedule One#}
+<div custom-style="Schedule Heading 1"><br/>Share Capital of the Company on the Effective Date</div>
+<table>
+    <thead>
+        <tr>
+            <th>
+                <p>
+                    <strong>Shareholder</strong>
+                </p>
+            </th>
+            <th colspan="2">
+                <p>
+                    <strong>Class/type of security</strong>
+                </p>
+            </th>
+            <th>
+                <p>
+                    <strong>Number of securities</strong>
+                </p>
+            </th>
+            <th>
+                <p>
+                    <strong>Legally and beneficially held (yes/no - If beneficial owner different, specify)</strong>
+                </p>
+            </th>
+            <th>
+                <p>
+                    <strong>Fully paid <br/>(yes/no – If no, specify)</strong>
+                </p>
+            </th>
+            <th>
+                <p>
+                    <strong>Percentage of Company's overall share capital on a Fully Diluted Basis</strong>
+                </p>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td colspan="2">
+                <p>[●]</p>
+            </td>
+            <td>
+                <p>[●]</p>
+            </td>
+            <td>
+                <p>[●]</p>
+            </td>
+            <td>
+                <p>[●]</p>
+            </td>
+            <td>
+                <p>[●]</p>
+            </td>
+            <td>
+                <p>[●]%</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <p>[●]</p>
+            </td>
+            <td>
+                <p>[●]</p>
+            </td>
+            <td>
+                <p>[●]</p>
+            </td>
+            <td>
+                <p>[●]</p>
+            </td>
+            <td>
+                <p>[●]</p>
+            </td>
+            <td>
+                <p>[●]%</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <p>[●]</p>
+            </td>
+            <td>
+                <p>[●]</p>
+            </td>
+            <td>
+                <p>[●]</p>
+            </td>
+            <td>
+                <p>[●]</p>
+            </td>
+            <td>
+                <p>[●]</p>
+            </td>
+            <td>
+                <p>[●]%</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <p>Total</p>
+            </td>
+            <td></td>
+            <td>
+                <p>[●]</p>
+            </td>
+            <td></td>
+            <td></td>
+            <td>
+                <p>[●]%</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+{#Schedule Two#}
+<div custom-style="Schedule Heading 1"><br/>Reserved Matters|| List of Reserved matters to be considered in the context of the specific transaction and tailored accordingly. In deciding whether to include each item on this list, consider whether each item is essential in order to protect the interest of True North, as excessive restrictions may hamper the efficient operation of the joint venture. However, if True North is taking only a minority stake in the Company, it may be preferable a more extensive list of reserved matters for its benefit. Conversely, if True North is taking a majority stake, a less extensive list of reserved matters may be preferable, and perhaps confining it to only those which are absolutely critical from a minority investor's perspective. However, on a 50:50 joint venture it might only be additional funding and alterations to the [Company's] constitution/share capital structure that True North might want to have as shareholder reserved matters, reflecting the fact that it has a large degree of control by virtue of its 50% (50 per cent) shareholding (i.e. not even an ordinary resolution can be passed without its consent).|| [Substantive Variable 3a: Start]</div>
+<div custom-style="Schedule Heading 2"><br/>Shareholder Reserved Matters [Substantive Variable 3a: End] [[Substantive Variable Rm: Start]</div>
+<div custom-style="Schedule Heading 6">Amendment of constitutional documents;</div>
+<div custom-style="Schedule Heading 6">Any increase, decrease, buy back, redemption, reduction or other alterations to its authorized share capital or issued share capital including any private placement or public issue of securities, issuance of securities with differential voting rights, issue or redemption of preference shares, grant of options for securities and issue of sweat equity, but excluding (i) any issue of New Securities contemplated in Clause 8 (<em>Further Funding</em>) and any change to authorized capital to facilitate such issue, (ii) any transfer of Shares that is permitted under Clause 9 (<em>Transfer of Securities</em>) or 10 (<em>Exit</em>) of this Agreement<strong>[Substantive Variable 5: Start]</strong>, and (iii) any [buy-back] of Shares specifically contemplated in this Agreement|| Bracketed portion to be included when a Shareholder has the right to require the Company to redeem or buy-back its shares under any circumstances.||
+    <strong>[Substantive Variable 5: End][Substantive Variable PS: Start]</strong>, and any redemption of preference shares specifically contemplated in this Agreement and/ or the Transaction Documents<strong>[Substantive Variable PS: End]</strong>;</div>
+<div custom-style="Schedule Heading 6">
+    <strong>[Substantive Variable ESOP: Start]</strong>Amendments to the ESOP Plan or <strong>[Substantive Variable ESOP: End]</strong>approval or adoption of, or variation to, any other stock option scheme, stock award scheme or other scheme for providing money to purchase or subscribe to Shares to be held in trust for employees, directors etc.;</div>
+<div custom-style="Schedule Heading 6">Any merger, restructuring, amalgamation, demerger, reorganization, consolidation or any compromise or arrangement with creditors or shareholders;</div>
+<div custom-style="Schedule Heading 6">Sale, transfer, lease, license, assignment, exchange, creation of Encumbrance on or other disposition of assets (including Intellectual Property) [whose value is in excess of INR [<em>insert</em>] / otherwise than in the Ordinary Course of Business];</div>
+<div custom-style="Schedule Heading 6">Any material change in the nature or type of the Business;</div>
+<div custom-style="Schedule Heading 6">Investments or other acquisition of assets (including Intellectual Property) [whose value is in excess of INR [<em>insert</em>] / otherwise than in the Ordinary Course of Business];</div>
+<div custom-style="Schedule Heading 6">
+    <strong>[Substantive Variable 15: Start]</strong>Approval of the Business Plan and any material adverse deviation from the applicable Business Plan including without limitation,<strong>[Substantive Variable 15: End]</strong> the following matters:</div>
+<div custom-style="Schedule Heading 7">any borrowings (including non-convertible debentures and redeemable preference shares) in excess of [paid up capital and free reserves/ INR [<em>insert</em>]<strong>[Substantive Variable 15: Start]</strong>/ the amounts approved in the relevant Business Plan<strong>[Substantive Variable 15: End]</strong>];</div>
+<div custom-style="Schedule Heading 7">granting any long term loan in excess of [INR [<em>insert</em>] / [<em>insert</em>] % [(<em>insert</em> per cent)] of the paid up capital and free reserves<strong>[Substantive Variable 15: Start]</strong>/ the amounts approved in the relevant Business Plan<strong>[Substantive Variable 15: End]</strong>];</div>
+<div custom-style="Schedule Heading 7">the issuance of any guarantees, indemnities or the grant of other security in excess of [INR [<em>insert</em>]<strong>[Substantive Variable 15: Start]</strong>/ the amounts approved in the relevant Business Plan<strong>[Substantive Variable 15: End]</strong>];</div>
+<div custom-style="Schedule Heading 7">any capital or special development expenditure which exceeds [INR [<em>insert</em>]<strong> [Substantive Variable 15: Start]</strong>/ the amounts approved in the relevant Business Plan<strong>[Substantive Variable 15: End]</strong>];</div>
+<div custom-style="Schedule Heading 7">any expansion, reorganization or change in the nature or scope of business or activities <strong>[Substantive Variable 15: Start]</strong>/ otherwise than as approved under the relevant Business Plan<strong>[Substantive Variable 15: End]</strong>; or</div>
+<div custom-style="Schedule Heading 7">entering or modifying any Material Contracts for a value in excess of INR [<em>insert</em>]<strong>[Substantive Variable 15: Start]</strong>/ not specifically approved under the relevant Business Plan<strong> [Substantive Variable 15: End]</strong>;</div>
+<div custom-style="Schedule Heading 6">Creation of any new subsidiaries;</div>
+<div custom-style="Schedule Heading 6">Decisions pertaining to any joint venture partnerships;</div>
+<div custom-style="Schedule Heading 6">Entering, amending[ or terminating] any agreement, arrangement or transaction with: (i) a Related Party, or (ii) a Shareholder or its Affiliates[, in each case, whose value is in excess of INR [<em>insert</em>]];</div>
+<div custom-style="Schedule Heading 6">Decisions relating to any litigation or arbitration [whose value is in excess of INR [<em>insert</em>]];</div>
+<div custom-style="Schedule Heading 6">Any decision pertaining to an investigation into its affairs, insolvency resolution process, liquidation, dissolution or winding-up or assignment for the benefit of its creditors;</div>
+<div custom-style="Schedule Heading 6">Issue of convertible debt (debentures or loans), conversion of loans or debentures into equity shares;</div>
+<div custom-style="Schedule Heading 6">Appointment, change (including removal or replacement) and remuneration of statutory auditors and internal auditors[, other than as expressly required under this Agreement];</div>
+<div custom-style="Schedule Heading 6">Appointment, removal and remuneration of the Key Employees [Provided However That, notwithstanding anything to the contrary in Clause 7 (<em>Management of the Company</em>), the prior written approval of [<em>insert name of Relevant Shareholder</em>] shall not be required in case the Key Employee whose employment is proposed to be terminated is [<em>insert name of same Relevant Shareholder</em>] or his/ her Affiliate;</div>
+<div custom-style="Schedule Heading 6">Declaration or payment of any dividend or other distribution (in any form including bonus shares) [exceeding INR [<em>insert</em>]];</div>
+<div custom-style="Schedule Heading 6">Decisions pertaining to timing, advisors and price band for a listing of Securities<strong>[Substantive Variable QIPO: Start]</strong>, other than a QIPO<strong>[Substantive Variable QIPO: End]</strong>;</div>
+<div custom-style="Schedule Heading 6">Any change in accounting policies, except as required under Applicable Law;</div>
+<div custom-style="Schedule Heading 6">Approving or adopting the financial statements;</div>
+<div custom-style="Schedule Heading 6">Any writing off of any amounts in its books of accounts otherwise than in the Ordinary Course of Business;</div>
+<div custom-style="Schedule Heading 6">Any action for varying rights, privileges or preferences attached to any Securities;</div>
+<div custom-style="Schedule Heading 6">Amending the name of any Group Company;</div>
+<div custom-style="Schedule Heading 6">Use of [the Investment Amount] [<em>add any other relevant amounts</em>] other than as provided in the Transaction Documents<strong>[Substantive Variable 15: Start]</strong>/ in the Business Plan<strong> [Substantive Variable 15: End]</strong>;</div>
+<div custom-style="Schedule Heading 6"> [any other matters];|| To be added depending on the requirements of the transaction.|| or</div>
+<div custom-style="Schedule Heading 6">Delegation of authority or powers in relation to any of the aforementioned matters to any Person.] <strong>[SUBSTANTIVE VARIABLE RM: END]</strong>
+</div>
+<p>
+    <strong>[Substantive Variable 3A: Start]</strong>
+</p>
+<div custom-style="Schedule Heading 2"><br/>Special Matters</div>
+<p>[<em>Insert</em>] <strong>[Substantive Variable 3A: End]</strong>
+</p>
+<p>
+    <strong>[Substantive Variable 3B: Start]</strong>
+</p>
+<div custom-style="Schedule Heading 2"><br/>Other Matters</div>
+<p>[<em>Insert</em>] <strong>[Substantive Variable 3B: End]</strong>
+</p>
+{#Schedule Three#}
+<div custom-style="Schedule Heading 1"><br/>Deed of Adherence</div>
+<p>
+    <strong>THIS DEED OF ADHERENCE</strong> is made on [●]</p>
+<p>BY [●], a company incorporated in [●] (registered number [●]), whose registered office is at [●] (the <strong>New Shareholder</strong>).</p>
+<p>
+    <strong>INTRODUCTION</strong>:</p>
+<ol type="A">
+<li>The New Shareholder has agreed to acquire [●] shares in the capital of [●] (the <strong>Company</strong>) [from [●] (the <strong>Transferor Shareholder</strong>)].</li>
+<li>This Deed is made in compliance with the shareholders' agreement dated [●] between [●] [and/,] [●] [and the Company] (the <strong>Shareholders' Agreement</strong>) under which it is a condition of the transaction referred to in Recital (A) above that the New Shareholder executes a deed of adherence to the Shareholders' Agreement prior to such acquisition.</li>
+<li>Words and expressions defined in the Shareholders' Agreement shall have the same meaning when used in this Deed.</li>
+</ol>
+<p>
+    <strong>IT IS AGREED</strong> as follows:</p>
+<div custom-style="Schedule Heading 3">[The New Shareholder represents and warrants that it is an Affiliate of [the Transferor Shareholder.]</div>
+<div custom-style="Schedule Heading 3">The New Shareholder confirms that it has been given and has read a copy of the Shareholders' Agreement and covenants with and for the benefit of each person named in the schedule to this Deed and for the benefit of any other person who becomes a party to the Shareholders' Agreement after the date of this Deed to adhere to and be bound by the provisions of the Shareholders' Agreement, and to perform the obligations imposed by the Shareholders' Agreement which are to be performed on or after the date of this Deed, in all respects as if the New Shareholder were an original party to the Shareholders' Agreement and were named in it as [the Transferor Shareholder and] a Shareholder with the intent that the New Shareholder shall also be entitled to the benefit of the Shareholders' Agreement as if it had been an original party to the Shareholders' Agreement and was named in it as [the Transferor Shareholder and] a Shareholder.</div>
+<div custom-style="Schedule Heading 3">[In terms of Clause 9.6(g) (<em>General Provisions</em>) of the Shareholders' Agreement, with effect from [●], the Governance Rights and the Exit Rights of the Transferor Shareholder shall be exercised hereinafter by [the Transferor Shareholder/ the New Shareholder] (in accordance with the agreement in this regard between the Transferor Shareholder and the New Shareholder).]</div>
+<div custom-style="Schedule Heading 3">The New Shareholder hereby represents and warrants to each person named in the schedule to this Deed that: </div>
+<div custom-style="Schedule Heading 4">Capacity and Authority</div>
+<div custom-style="Schedule Heading 6">to the extent it is a corporation, partnership or other entity:</div>
+<div custom-style="Schedule Heading 7">it is duly established and validly exists under the laws of the place of its incorporation or formation; and</div>
+<div custom-style="Schedule Heading 7">the execution, delivery and performance by it of this Deed complies with its constituent documents;</div>
+<div custom-style="Schedule Heading 6">all necessary authorisations, permits and consents for the execution, delivery and performance by him, her or it of this Deed have been obtained;</div>
+<div custom-style="Schedule Heading 6">this Deed:</div>
+<div custom-style="Schedule Heading 7">constitutes legal, valid and binding obligations on and of him, her or it, enforceable in accordance with its terms (except to the extent limited by Applicable Law affecting creditors' rights generally), subject to any necessary stamping or registration; and</div>
+<div custom-style="Schedule Heading 7">does not constitute a breach of any Applicable Law, or cause or result in default under any agreement or other arrangement by which he, she or it is bound; and</div>
+<div custom-style="Schedule Heading 6">he, she or it has full power and capacity to own assets and to enter into and perform the obligations incumbent upon him, her or it under this Deed.</div>
+<div custom-style="Schedule Heading 4">Insolvency and Litigation</div>
+<div custom-style="Schedule Heading 6">he, she or it is not:</div>
+<div custom-style="Schedule Heading 7">subject to or suffering an Insolvency Event; or</div>
+<div custom-style="Schedule Heading 7">a party to any litigation, arbitration, mediation, conciliation or administrative proceeding which is taking place whose outcome is reasonably likely to have a material adverse effect on its ability to perform its obligations under this Deed.</div>
+<div custom-style="Schedule Heading 4">Other</div>
+<div custom-style="Schedule Heading 6">in entering into and performing this Deed, he, she or it is acting in his, her or its personal capacity and not in the capacity as trustee of any trust, general partner of a limited partnership or as agent for any other person; and</div>
+<div custom-style="Schedule Heading 6">each person who executes this Deed on his, her or its behalf as an authorised signatory or under a power of attorney is duly authorised to do so.</div>
+<div custom-style="Schedule Heading 4">Financial resources</div>
+<div custom-style="Schedule Heading 6">it has the requisite financial resources and capability to fulfil the obligation of the Transferor Shareholder under this Deed.</div>
+<div custom-style="Schedule Heading 3">The details of the New Shareholder for the purposes of Clause 19 (<em>Notices</em>) of the Shareholders' Agreement is set out below:</div>
+<p>Address:	[●]</p>
+<p>Fax number:	[●]</p>
+<p>Marked for the attention of:	[●]|| Add service of process clause if New Shareholder is not local resident.||
+</p>
+<div custom-style="Schedule Heading 3">The terms of Clauses [20 (<em>Dispute Resolution</em>) and 21 (<em>Governing Law and Jurisdiction</em>)] shall apply to this Deed as if incorporated in full herein.</div>
+<p>
+    <strong>EXECUTED</strong> and <strong>DELIVERED</strong> as a <strong>DEED</strong> on the date set out above.</p>
+<p>[Insert details of parties to Agreement including those who have executed earlier Deeds of Adherence.]</p>
+<p>Executed as a deed by	)</p>
+<p>[insert name of New Shareholder]	)</p>
+<p>___________________________	Signature of Authorised Signatory</p>
+<p>___________________________	Name of Authorised Signatory</p>
+<p>in the presence of:</p>
+<p>___________________________	Signature of witness</p>
+<p>___________________________	Name of witness</p>
+<p>___________________________	Address of witness</p>
+<p>___________________________</p>
+<p>___________________________</p>
+<p>___________________________	Signature</p>
+<p>[This Deed is confirmed by</p>
+<p>[insert name of Transferor Shareholder]	)</p>
+<p>___________________________	Signature of Authorised Signatory</p>
+<p>___________________________	Name of Authorised Signatory]</p>
+<p>
+    <strong>[Substantive Variable 9: Start]</strong>
+</p>
+{#Schedule Four#}
+<div custom-style="Schedule Heading 1"><br/>Deadlock|| This [Schedule 4 (<em>Deadlock</em>)] sets out three suggested alternative approaches to an unbreakable deadlock situation, which can be customised according to the requirements of the transaction and True North's position in the specific transaction. Use these options alternatively. Consider also whether it is appropriate to include such provisions dealing with the consequences of a Deadlock situation. It may be better for the agreement to be silent on this point, to avoid a party creating a Deadlock situation which it can then exploit/gaming the situation. This should be balanced against the desire for certainty.||
+</div>
+<p>
+    <strong>[<em>Option 1: Auction/Shoot‑out</em>]|| This is an option where each Shareholder gives a sealed bid to the other Shareholder constituting (i) an offer to buy all the Shares held by the other Shareholder at the price written in its sealed bid if this is greater than the bid price specified by the other Shareholder in its sealed bid and (ii) an offer to sell all of its own Shares at the bid price specified by the other Shareholder in its sealed bid if that bid price exceeds its own. This tends to favour the more cash rich Shareholder who can afford to offer more for the other Shareholder's Shares.||
+    </strong>
+</p>
+<p>If the Deadlock Matter is not resolved by the Deadlock Shareholder Representatives within the Deadlock Resolution Period, then any Deadlock Shareholder may within [30 (thirty)] Business Days after the expiry of the Deadlock Resolution Period serve a written notice (a <strong>Deadlock Resolution Notice</strong>) on the other Deadlock Shareholder(s).</p>
+<div custom-style="Schedule Heading 6">The Deadlock Shareholders shall jointly engage [the Company's statutory auditors/ an independent accounting firm of international repute/ an independent investment bank of international repute] within [20 (twenty)] Business Days following the date of the Deadlock Resolution Notice to act as auctioneer for the purposes of this Schedule 4 (<em>Deadlock</em>) (the <strong>Auctioneer</strong>). If the Deadlock Shareholders do not agree on an Auctioneer within such period, any Deadlock Shareholder may request the [President of the Institute of Chartered Accountants of India] to make the appointment. The fees and expenses of the Auctioneer shall be borne equally by the Deadlock Shareholders.</div>
+<div custom-style="Schedule Heading 6">Within [10 (ten)] Business Days after the appointment of an Auctioneer (<strong>Bid Period</strong>), each Deadlock Shareholder shall be entitled to give a written notice containing a sealed bid (a <strong>Bid Notice</strong>) to the Auctioneer. The Bid Notice of a Deadlock Shareholder shall:</div>
+<div custom-style="Schedule Heading 7">set out the price at which it is willing to purchase for cash in INR all (but not some only) of the Shares held by the other Deadlock Shareholder(s) and their Affiliates (the <strong>Bid Price</strong>);</div>
+<div custom-style="Schedule Heading 7">constitute an offer by that Deadlock Shareholder to purchase all of the Shares held by the other Deadlock Shareholder(s) and their Affiliates at the Bid Price;</div>
+<div custom-style="Schedule Heading 7">constitute an offer by that Deadlock Shareholder to sell all of the Shares held by it and its Affiliates at the Bid Price specified by the other Deadlock Shareholder (who has offered the highest bid in accordance with paragraph (c)) in its Bid Notice if that Bid Price exceeds its own Bid Price;</div>
+<div custom-style="Schedule Heading 7">be irrevocable and unconditional; and</div>
+<div custom-style="Schedule Heading 7">be governed by Indian law.</div>
+<div custom-style="Schedule Heading 6">The Auctioneer shall give a written notice to each Deadlock Shareholder specifying which Deadlock Shareholder (the <strong>Purchaser</strong>) has offered the highest Bid Price within [1 (one)] Business Day of receipt of the last Bid Notice or the end of the Bid Period, whichever is earlier. The Auctioneer shall act as an expert and not as an arbitrator and the Auctioneer's notice shall be final and binding on each of the Deadlock Shareholders (save in the case of manifest error in which case the notice shall be void and shall be remitted to the Auctioneer for correction). The Purchaser shall purchase the Shares held by the other Deadlock Shareholders and their Affiliates at the Bid Price specified in the Purchaser's Bid Notice and the Deadlock Shareholders shall effect such transfer and payment within [5 (five)] Business Days following the date of the Auctioneer's notice.</div>
+<div custom-style="Schedule Heading 6">If a Deadlock Shareholder fails to serve a Bid Notice, it shall be deemed to have accepted the offer to purchase the Shares held by it and its Affiliates on the terms set out in the Purchaser's Bid Notice, and the Deadlock Shareholders shall effect such transfer and payment within [5 (five)] Business Days following the date of the Auctioneer's notice.</div>
+<div custom-style="Schedule Heading 6">The sale and purchase of all the Shares to the Purchaser in accordance with this Schedule 4 (<em>Deadlock</em>) shall be made on the terms set out in Clause 9.6 (<em>General Provisions</em>).</div>
+<p>
+    <strong>OR</strong>
+</p>
+<p>
+    <strong>[Option 2: Put and Call Options]|| This is an option where each Shareholder has an option of requiring the other Shareholder to purchase or sell their Shares for an amount equal to the Fair Value of the Shares. This may be fairer than the Auction/Shoot out but it allows a party to use the Deadlock mechanism to trigger the put/call they want. In some cases only a Call Option may be desired, therefore a provision has been made for such a scenario.||
+    </strong>
+</p>
+<div custom-style="Schedule Heading 3">If the Deadlock Matter is not resolved by the Deadlock Shareholder Representatives within the Deadlock Resolution Period, then each Deadlock Shareholder shall have the right (but no obligation) to, within [30 (thirty)] Business Days after the expiry of the Deadlock Resolution Period (the <strong>Deadlock Option Period</strong>):</div>
+<div custom-style="Schedule Heading 6">require the [other Deadlock Shareholders] to purchase all (but not some only) of the Shares held by that Deadlock Shareholder and its Affiliates (the <strong>Deadlock</strong>
+    <strong>Put Shares</strong>) pro rata to the [other Deadlock Shareholders' Entitlement in cash for an amount representing the FMV of the Deadlock Put Shares (the <strong>Deadlock</strong>
+    <strong>Put Option Price</strong>) on the terms set out in this paragraph 1(a) and paragraphs 2, 4 and 5 of this Schedule 4 (<em>Deadlock</em>) (<strong>Deadlock Put Option</strong>), or</div>
+<div custom-style="Schedule Heading 6">purchase all (but not some only) of the Shares held by the [other Deadlock Shareholders] and their Affiliates (the <strong>Deadlock</strong>
+    <strong>Call Shares</strong>) in cash for an amount no less than the FMV of the Deadlock Call Shares (the <strong>Deadlock</strong>
+    <strong>Call Option Price</strong>) on the terms set out in this paragraph 1(b) and paragraphs 3, 4 and 5 of this Schedule 4 (<em>Deadlock</em>) (the <strong>Deadlock</strong>
+    <strong>Call Option</strong>).</div>
+<div custom-style="Schedule Heading 3">The Deadlock Put Option is exercisable in whole but not in part by written notice from a Deadlock Shareholder to the [other Deadlock Shareholders] (the <strong>Deadlock Put Notice</strong>) given at any time during the Deadlock Option Period. A Deadlock Put Notice shall be irrevocable and unconditional. Within 5 (five) Business Days of determination of the FMV of the Deadlock Put Shares in accordance with Clause 11 (<em>Fair Market Value and Share Price Adjustments</em>), the [other Deadlock Shareholders] shall purchase, and the Deadlock Shareholder who has given the Deadlock Put Notice shall sell, the Deadlock Put Shares for the Deadlock Put Option Price.</div>
+<div custom-style="Schedule Heading 3">The Deadlock Call Option is exercisable in whole but not in part by written notice from a Deadlock Shareholder to the [other Deadlock Shareholders] (the <strong>Deadlock Call Notice</strong>) given at any time during the Deadlock Option Period. A Deadlock Call Notice shall be irrevocable and unconditional. Within 5 (five) Business Days of determination of the FMV of the Deadlock Call Shares in accordance with Clause 11 (<em>Fair Market Value and Share Price Adjustments</em>), the [other Deadlock Shareholders] shall sell, and the Deadlock Shareholder who has given the Deadlock Call Notice shall purchase, the Deadlock Call Shares for the Deadlock Call Option Price.</div>
+<div custom-style="Schedule Heading 3">[For the purposes of this paragraph 4. of this Schedule 4 (<em>Deadlock</em>), [each of a Deadlock Call Notice and a Deadlock Put Notice/the Deadlock Call Notice] shall be referred to as a <strong>Deadlock Notice</strong>. If each Deadlock Shareholder receives a Deadlock Notice then the first notice which is properly delivered shall prevail. If two Deadlock Notices are served simultaneously, the Deadlock Notice which states the higher [Deadlock Call Option Price/Deadlock Put Option Price or Deadlock Call Option Price (as the case may be)] shall prevail, except [in the case of the service of two simultaneous Deadlock Put Notices, in which case the Deadlock Put Notice which states the lower Deadlock Put Option Price shall prevail].]</div>
+<div custom-style="Schedule Heading 3">The sale and purchase of the [Deadlock Call Shares/Deadlock Put Shares or the Deadlock Call Shares, as the case may be,] unless provided otherwise in this Schedule 4 (<em>Deadlock</em>) shall be made on the terms set out in this Agreement.</div>
+<p>
+    <strong>[Option 3: Sale or Winding‑up of the Company]</strong>|| Sale/winding up is a drastic solution but can help focus the minds of the Shareholders. If they still want to remain in the JV or value will be eroded if a sale/winding‑up is implemented, the Shareholders may strive harder to resolve the Deadlock. An alternative to this [Schedule 4 (<em>Deadlock</em>)] would be to provide that the investment bank has a set period of time to try to sell the Business (e.g. six months), with a liquidator then being appointed to wind‑up the Company if a sale has not been agreed with a third party by such time.||
+</p>
+<p>If the Deadlock Matter is not resolved by the Deadlock Shareholder Representatives within the Deadlock Resolution Period, then any Deadlock Shareholder may send a notice to the Directors requiring them to carry out the procedures necessary for the winding‑up or sale of the Company. The Shareholders shall take all necessary action to ensure that the Company is duly wound‑up or sold in an expeditious manner, including appointing a liquidator to wind‑up the Company or an independent investment bank to realise the maximum value of the Business for the Shareholders, whether by way of sale of the Business or the Shares. The costs of the winding‑up or sale shall be shared equally by the Shareholders.</p>
+<p>
+    <strong>[Substantive Variable 9: End] [Substantive Variable 6: Start]</strong>
+</p>
+{#Schedule Five#}
+<div custom-style="Schedule Heading 1"><br/>Upside Sharing Illustration</div>
+<p>[<em>to be inserted</em>]</p>
+<p>
+    <strong>[Substantive Variable 6: End]</strong>
+</p>
+{#Schedule Six#}
+<div custom-style="Schedule Heading 1"><br/>Form of the Put Exercise Notice</div>
+<p>
+    <em>[to be inserted]</em>
+</p>
+<p></p>
+{#Schedule Seven#}
+<div custom-style="Schedule Heading 1"><br/>Other Parties</div>
+<p>[<em>Details of multiple parties that are not identified in the Parties clause to be inserted, following the conventions in the Parties section of this Agreement.</em>]</p>
+<p>[<em>Where entities are described in this Schedule, suggest using the following table.</em>]</p>
+<table>
+    <thead>
+        <tr>
+            <th>
+                <p>
+                    <strong>No.</strong>
+                </p>
+            </th>
+            <th>
+                <p>
+                    <strong>Full name of Party</strong>
+                </p>
+            </th>
+            <th>
+                <p>
+                    <strong>Type of entity</strong>
+                </p>
+            </th>
+            <th>
+                <p>
+                    <strong>Laws under which the entity is formed</strong>
+                </p>
+            </th>
+            <th>
+                <p>
+                    <strong>Registration/ other identifying number</strong>
+                </p>
+            </th>
+            <th>
+                <p>
+                    <strong>Registered office address</strong>
+                </p>
+            </th>
+            <th>
+                <p>
+                    <strong>[Authorised signatory/ies (if applicable)]</strong>
+                </p>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <p>1.</p>
+            </td>
+            <td>
+                <p>[●]</p>
+            </td>
+            <td>
+                <p>[Company/limited liability partnership/ limited partnership / trust/other]</p>
+            </td>
+            <td>
+                <p>[●]</p>
+            </td>
+            <td>
+                <p>[●]</p>
+            </td>
+            <td>
+                <p>[●]</p>
+            </td>
+            <td>
+                <p>[●]</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>2.</p>
+            </td>
+            <td>
+                <p>[●]</p>
+            </td>
+            <td>
+                <p>[Company/limited liability partnership/ limited partnership / trust/other]</p>
+            </td>
+            <td>
+                <p>[●]</p>
+            </td>
+            <td>
+                <p>[●]</p>
+            </td>
+            <td>
+                <p>[●]</p>
+            </td>
+            <td>
+                <p>[●]</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>[<em>Where natural persons are described in this Schedule, suggest using the following table.</em>]</p>
+<table>
+    <thead>
+        <tr>
+            <th>
+                <p>
+                    <strong>No.</strong>
+                </p>
+            </th>
+            <th>
+                <p>
+                    <strong>Full name of Party</strong>
+                </p>
+            </th>
+            <th>
+                <p>
+                    <strong>[Parents]</strong>
+                </p>
+            </th>
+            <th>
+                <p>
+                    <strong>Nationality / Citizenship(s) (and usual jurisdiction of residence, if different)</strong>
+                </p>
+            </th>
+            <th>
+                <p>
+                    <strong>Residential Address</strong>
+                </p>
+            </th>
+            <th>
+                <p>
+                    <strong>[Authorised signatory/ies (if different to the individual Party)]</strong>
+                </p>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <p>1.</p>
+            </td>
+            <td>
+                <p>[●]</p>
+            </td>
+            <td>
+                <p>[●]</p>
+            </td>
+            <td>
+                <p>[●]</p>
+            </td>
+            <td>
+                <p>[●]</p>
+            </td>
+            <td>
+                <p>[●][Not applicable]</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>2.</p>
+            </td>
+            <td>
+                <p>[●]</p>
+            </td>
+            <td>
+                <p>[●]</p>
+            </td>
+            <td>
+                <p>[●]</p>
+            </td>
+            <td>
+                <p>[●]</p>
+            </td>
+            <td>
+                <p>[●][Not applicable]</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    <strong>[Substantive Variable ESOP: Start]</strong>
+</p>
+{#Schedule Eight#}
+<div custom-style="Schedule Heading 1"><br/>ESOP Plan</div>
+<p>[<em>insert</em>]<strong> [Substantive Variable ESOP: End]</strong>
+</p>
+<p>
+    <strong>IN WITNESS WHEREOF</strong>, this Agreement has been executed and delivered by the Parties on the day first mentioned above.</p>
+<p>For and on behalf of <strong>[<em>insert name of Party</em>]</strong>
+</p>
+<p>_________________________________</p>
+<p>Name:</p>
+<p>Designation:</p>
+<p>[<em>to be tailored for the relevant Parties and local law considerations</em>]</p>
+<p>Signature page to the Shareholders' Agreement [dated [<em>insert agreement date</em>]] amongst [<em>insert names of all Parties other than Company with commas in between the names and 'and' before the final name</em>] and [<em>insert name of Company</em>] in relation to [<em>insert name of Company</em>]</p>
