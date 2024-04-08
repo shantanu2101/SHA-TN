@@ -105,7 +105,7 @@
 <p><b>THE PARTIES AGREE</b> as folows: </p>
 <h1><b>INTERPRETATION<b></h1>
     <h2><b>Defined Terms</b></h2>
-        <h3>In this Agreement:||	If any terms are not used in the main body of this Agreement, they should be removed from this Clause  ~~refVonepointonerefV~~ (<em>Defined Terms</em>). ||</h3>
+        <h3>In this Agreement:|| If any terms are not used in the main body of this Agreement, they should be removed from this Clause  ~~refVonepointonerefV~~ (<em>Defined Terms</em>). ||</h3>
         {% if rofo|length>0%}
         <h3><b>Acceptance Period</b> has the meaning given to it in Clause ~~refVninepointfourErefV~~ (<em>Right of First Offer</em>).</h3>
         <h3><b>Accepted Offer</b> has the meaning given to it in Clause ~~refVninepointfourErefV~~ (<em>Right of First Offer</em>).</h3>
@@ -609,8 +609,9 @@
         {%endif%}
 
         {%if rofo|length>0 or tag|length>0%}
-        <h3><b>Transfer Securities</b> means, in relation to a Selling Shareholder, the number of Securities held by such Selling Shareholder that it seeks to transfer to a Transferee{%if promoters|length>0 or unsurePromoters|length>0%}[, and in relation to the Promoter, the number of Securities held by the Promoter that it seeks to transfer to a Transferee]{% endif %}.</h3>
+        <h3><b>Transfer Securities</b> means, in relation to a Selling Shareholder, the number of Securities held by such Selling Shareholder that it seeks to transfer to a Transferee{%if promoters|length>0 or unsurePromoters|length>0%}[, and in relation to the Promoter, the number of Securities held by the Promoter that it seeks to transfer to a Transferee]{% endif %}.</h3>{% endif %}
         
+        {%if rofo|length>0% or tag|length>0%}
         <h3><b>Transferee</b>, in relation to a Selling Shareholder, means a Person that is not such Selling Shareholder's Affiliate{%if promoters|length>0 or unsurePromoters|length>0%}[, and, in relation to the Promoter, means a Person that is not the Promoter's Affiliate]{% endif %}.</h3>{%endif%}
 
         <h3><b>Transferring Shareholder </b>has the meaning given to it in Clause ~~refVninepointtworefV~~ (<em>Transfers to Affiliates</em>).</h3>
@@ -1699,8 +1700,7 @@
 <div custom-style="Schedule Heading 2"><br/>Shareholder Reserved Matters [Substantive Variable 3a: End] [[Substantive Variable Rm: Start]</div>{% endif %}
 {% if radioIsTheFirstListOFReservedMattersAgreed == 'No' %}
 <div custom-style="Schedule Heading 6">Amendment of constitutional documents;</div>
-<div custom-style="Schedule Heading 6">Any increase, decrease, buy back, redemption, reduction or other alterations to its authorized share capital or issued share capital including any private placement or public issue of securities, issuance of securities with differential voting rights, issue or redemption of preference shares, grant of options for securities and issue of sweat equity, but excluding (i) any issue of New Securities contemplated in Clause 8 (<em>Further Funding</em>) and any change to authorized capital to facilitate such issue, (ii) any transfer of Shares that is permitted under Clause 9 (<em>Transfer of Securities</em>) or 10 (<em>Exit</em>) of this Agreement<strong>[Substantive Variable 5: Start]</strong>, and (iii) any [buy-back] of Shares specifically contemplated in this Agreement|| Bracketed portion to be included when a Shareholder has the right to require the Company to redeem or buy-back its shares under any circumstances.||
-    <strong>[Substantive Variable 5: End][Substantive Variable PS: Start]</strong>{%if radioWillThereBeAnyPreferenceSharesOutstandingOrIssued == 'Yes'%}, and any redemption of preference shares specifically contemplated in this Agreement and/ or the Transaction Documents<strong>[Substantive Variable PS: End]</strong>{% endif %};</div>
+<div custom-style="Schedule Heading 6">Any increase, decrease, buy back, redemption, reduction or other alterations to its authorized share capital or issued share capital including any private placement or public issue of securities, issuance of securities with differential voting rights, issue or redemption of preference shares, grant of options for securities and issue of sweat equity, but excluding (i) any issue of New Securities contemplated in Clause 8 (<em>Further Funding</em>) and any change to authorized capital to facilitate such issue, (ii) any transfer of Shares that is permitted under Clause 9 (<em>Transfer of Securities</em>) or 10 (<em>Exit</em>) of this Agreement{%if radioWillTheExitOptionIncludeABuyBack == 'Yes'%}, and (iii) any [buy-back] of Shares specifically contemplated in this Agreement|| Bracketed portion to be included when a Shareholder has the right to require the Company to redeem or buy-back its shares under any circumstances.||{% endif %} [Substantive Variable PS: Start]{%if radioWillThereBeAnyPreferenceSharesOutstandingOrIssued == 'Yes'%}, and any redemption of preference shares specifically contemplated in this Agreement and/ or the Transaction Documents<strong>[Substantive Variable PS: End]</strong>{% endif %};</div>
     {%if radioShouldTheAgreementHaveProvisionsOnAgreedESOP == 'Yes'%}
 <div custom-style="Schedule Heading 6">Amendments to the ESOP Plan or approval or adoption of, or variation to, any other stock option scheme, stock award scheme or other scheme for providing money to purchase or subscribe to Shares to be held in trust for employees, directors etc.;</div>
 {%elif radioShouldTheAgreementHaveProvisionsOnAgreedESOP == 'No'%}
@@ -1711,13 +1711,13 @@
 <div custom-style="Schedule Heading 6">Any material change in the nature or type of the Business;</div>
 <div custom-style="Schedule Heading 6">Investments or other acquisition of assets (including Intellectual Property) [whose value is in excess of INR [<em>insert</em>] / otherwise than in the Ordinary Course of Business];</div>
 <div custom-style="Schedule Heading 6">
-    <strong>[Substantive Variable 15: Start]</strong>Approval of the Business Plan and any material adverse deviation from the applicable Business Plan including without limitation,<strong>[Substantive Variable 15: End]</strong> the following matters:</div>
-<div custom-style="Schedule Heading 7">any borrowings (including non-convertible debentures and redeemable preference shares) in excess of [paid up capital and free reserves/ INR [<em>insert</em>]<strong>[Substantive Variable 15: Start]</strong>/ the amounts approved in the relevant Business Plan<strong>[Substantive Variable 15: End]</strong>];</div>
-<div custom-style="Schedule Heading 7">granting any long term loan in excess of [INR [<em>insert</em>] / [<em>insert</em>] % [(<em>insert</em> per cent)] of the paid up capital and free reserves<strong>[Substantive Variable 15: Start]</strong>/ the amounts approved in the relevant Business Plan<strong>[Substantive Variable 15: End]</strong>];</div>
-<div custom-style="Schedule Heading 7">the issuance of any guarantees, indemnities or the grant of other security in excess of [INR [<em>insert</em>]<strong>[Substantive Variable 15: Start]</strong>/ the amounts approved in the relevant Business Plan<strong>[Substantive Variable 15: End]</strong>];</div>
-<div custom-style="Schedule Heading 7">any capital or special development expenditure which exceeds [INR [<em>insert</em>]<strong> [Substantive Variable 15: Start]</strong>/ the amounts approved in the relevant Business Plan<strong>[Substantive Variable 15: End]</strong>];</div>
-<div custom-style="Schedule Heading 7">any expansion, reorganization or change in the nature or scope of business or activities <strong>[Substantive Variable 15: Start]</strong>/ otherwise than as approved under the relevant Business Plan<strong>[Substantive Variable 15: End]</strong>; or</div>
-<div custom-style="Schedule Heading 7">entering or modifying any Material Contracts for a value in excess of INR [<em>insert</em>]<strong>[Substantive Variable 15: Start]</strong>/ not specifically approved under the relevant Business Plan<strong> [Substantive Variable 15: End]</strong>;</div>
+    Approval of {%if radioWillThereBeAnAgreedBusinessPlan == 'Yes'%}the Business Plan and any material adverse deviation from the applicable Business Plan including without limitation, {% endif %}the following matters:</div>
+<div custom-style="Schedule Heading 7">any borrowings (including non-convertible debentures and redeemable preference shares) in excess of [paid up capital and free reserves/ INR [<em>insert</em>]{%if radioWillThereBeAnAgreedBusinessPlan == 'Yes'%}/ the amounts approved in the relevant Business Plan{% endif %};</div>
+<div custom-style="Schedule Heading 7">granting any long term loan in excess of [INR [<em>insert</em>] / [<em>insert</em>] % [(<em>insert</em> per cent)] of the paid up capital and free reserves{%if radioWillThereBeAnAgreedBusinessPlan == 'Yes'%}/ the amounts approved in the relevant Business Plan{% endif %};</div>
+<div custom-style="Schedule Heading 7">the issuance of any guarantees, indemnities or the grant of other security in excess of [INR [<em>insert</em>]{%if radioWillThereBeAnAgreedBusinessPlan == 'Yes'%}/ the amounts approved in the relevant Business Plan{% endif %};</div>
+<div custom-style="Schedule Heading 7">any capital or special development expenditure which exceeds [INR [<em>insert</em>]{%if radioWillThereBeAnAgreedBusinessPlan == 'Yes'%}/ the amounts approved in the relevant Business Plan{% endif %};</div>
+<div custom-style="Schedule Heading 7">any expansion, reorganization or change in the nature or scope of business or activities {%if radioWillThereBeAnAgreedBusinessPlan == 'Yes'%}/ otherwise than as approved under the relevant Business Plan{% endif %}; or</div>
+<div custom-style="Schedule Heading 7">entering or modifying any Material Contracts for a value in excess of INR [<em>insert</em>]{%if radioWillThereBeAnAgreedBusinessPlan == 'Yes'%}/ not specifically approved under the relevant Business Plan{% endif %};</div>
 <div custom-style="Schedule Heading 6">Creation of any new subsidiaries;</div>
 <div custom-style="Schedule Heading 6">Decisions pertaining to any joint venture partnerships;</div>
 <div custom-style="Schedule Heading 6">Entering, amending[ or terminating] any agreement, arrangement or transaction with: (i) a Related Party, or (ii) a Shareholder or its Affiliates[, in each case, whose value is in excess of INR [<em>insert</em>]];</div>
@@ -1727,13 +1727,13 @@
 <div custom-style="Schedule Heading 6">Appointment, change (including removal or replacement) and remuneration of statutory auditors and internal auditors[, other than as expressly required under this Agreement];</div>
 <div custom-style="Schedule Heading 6">Appointment, removal and remuneration of the Key Employees [Provided However That, notwithstanding anything to the contrary in Clause 7 (<em>Management of the Company</em>), the prior written approval of [<em>insert name of Relevant Shareholder</em>] shall not be required in case the Key Employee whose employment is proposed to be terminated is [<em>insert name of same Relevant Shareholder</em>] or his/ her Affiliate;</div>
 <div custom-style="Schedule Heading 6">Declaration or payment of any dividend or other distribution (in any form including bonus shares) [exceeding INR [<em>insert</em>]];</div>
-<div custom-style="Schedule Heading 6">Decisions pertaining to timing, advisors and price band for a listing of Securities<strong>[Substantive Variable QIPO: Start]</strong>, other than a QIPO<strong>[Substantive Variable QIPO: End]</strong>;</div>
+<div custom-style="Schedule Heading 6">Decisions pertaining to timing, advisors and price band for a listing of Securities{%if radioWillTheExitOptionIncludeABuyBack == 'Yes'%}, other than a QIPO{% endif %};</div>
 <div custom-style="Schedule Heading 6">Any change in accounting policies, except as required under Applicable Law;</div>
 <div custom-style="Schedule Heading 6">Approving or adopting the financial statements;</div>
 <div custom-style="Schedule Heading 6">Any writing off of any amounts in its books of accounts otherwise than in the Ordinary Course of Business;</div>
 <div custom-style="Schedule Heading 6">Any action for varying rights, privileges or preferences attached to any Securities;</div>
 <div custom-style="Schedule Heading 6">Amending the name of any Group Company;</div>
-<div custom-style="Schedule Heading 6">Use of [the Investment Amount] [<em>add any other relevant amounts</em>] other than as provided in the Transaction Documents<strong>[Substantive Variable 15: Start]</strong>/ in the Business Plan<strong> [Substantive Variable 15: End]</strong>;</div>
+<div custom-style="Schedule Heading 6">Use of [the Investment Amount] [<em>add any other relevant amounts</em>] other than as provided in the Transaction Documents{%if radioWillThereBeAnAgreedBusinessPlan == 'Yes'%}/ in the Business Plan{% endif %};</div>
 <div custom-style="Schedule Heading 6"> [any other matters];|| To be added depending on the requirements of the transaction.|| or</div>
 <div custom-style="Schedule Heading 6">Delegation of authority or powers in relation to any of the aforementioned matters to any Person.] <strong>[SUBSTANTIVE VARIABLE RM: END]</strong>
 </div>
@@ -1827,6 +1827,7 @@
 <p>
     <strong>[Substantive Variable 9: Start]</strong>
 </p>
+{%if radioIsADeadlockResolutionMechanismRequired == 'Yes'%}
 {#Schedule Four#}
 <div custom-style="Schedule Heading 1"><br/>Deadlock|| This [Schedule 4 (<em>Deadlock</em>)] sets out three suggested alternative approaches to an unbreakable deadlock situation, which can be customised according to the requirements of the transaction and True North's position in the specific transaction. Use these options alternatively. Consider also whether it is appropriate to include such provisions dealing with the consequences of a Deadlock situation. It may be better for the agreement to be silent on this point, to avoid a party creating a Deadlock situation which it can then exploit/gaming the situation. This should be balanced against the desire for certainty.||
 </div>
@@ -1868,15 +1869,14 @@
     <strong>[Option 3: Sale or Winding‑up of the Company]</strong>|| Sale/winding up is a drastic solution but can help focus the minds of the Shareholders. If they still want to remain in the JV or value will be eroded if a sale/winding‑up is implemented, the Shareholders may strive harder to resolve the Deadlock. An alternative to this [Schedule 4 (<em>Deadlock</em>)] would be to provide that the investment bank has a set period of time to try to sell the Business (e.g. six months), with a liquidator then being appointed to wind‑up the Company if a sale has not been agreed with a third party by such time.||
 </p>
 <p>If the Deadlock Matter is not resolved by the Deadlock Shareholder Representatives within the Deadlock Resolution Period, then any Deadlock Shareholder may send a notice to the Directors requiring them to carry out the procedures necessary for the winding‑up or sale of the Company. The Shareholders shall take all necessary action to ensure that the Company is duly wound‑up or sold in an expeditious manner, including appointing a liquidator to wind‑up the Company or an independent investment bank to realise the maximum value of the Business for the Shareholders, whether by way of sale of the Business or the Shares. The costs of the winding‑up or sale shall be shared equally by the Shareholders.</p>
-<p>
-    <strong>[Substantive Variable 9: End] [Substantive Variable 6: Start]</strong>
-</p>
+{% endif %}
+
+{%if conRadioWillAnyShareholderShareUpsideWithOtherShareholderUponExit == 'Yes'%}
 {#Schedule Five#}
 <div custom-style="Schedule Heading 1"><br/>Upside Sharing Illustration</div>
 <p>[<em>to be inserted</em>]</p>
-<p>
-    <strong>[Substantive Variable 6: End]</strong>
-</p>
+{% endif %}
+
 {#Schedule Six#}
 <div custom-style="Schedule Heading 1"><br/>Form of the Put Exercise Notice</div>
 <p>
