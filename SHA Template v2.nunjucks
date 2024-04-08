@@ -26,73 +26,90 @@
         {%set counter=1%}
     {% endif %}
 {% endfor %}
-
-{%set coverPageArray = []%}
-{% for x in shareholders %}
-    {%set _ = coverPageArray.append(x) %}
-{% endfor %}
-{%if radioWillTheTargetCompanyBeAPartyToTheSha == 'Yes' %}
-    {%set _ = coverPageArray.append(company[0]) %}
+{#Cover page#}
+{%if radioIsTheTargetAnIndianCompany == 'No'%}
+    {% for x in shareholders %}
+        {% if loop.index==(shareholders|length) %}
+            {% if x.partyType=="TrueNorth Entities" %}
+                <div custom-style="Unnumbered Heading1">{{x.entityName}}</div>
+                <div custom-style="Unnumbered Heading1">AND</div>
+                {% else %}
+                <div custom-style="Unnumbered Heading1">{{x.name}}</div>
+                <div custom-style="Unnumbered Heading1">AND</div>
+            {% endif %}
+        {% else %}
+            {% if x.partyType=="TrueNorth Entities" %}
+                <div custom-style="Unnumbered Heading1">{{x.entityName}}</div> 
+                {% else %}
+                <div custom-style="Unnumbered Heading1">{{x.name}}</div>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+<div custom-style="Unnumbered Heading1">{{company[0].name}}{%if radioIsTheTargetAnIndianCompany == 'No'%}|| This template assumes that the joint venture company, which will typically be a company incorporated in India, will be a party to the Agreement. Special considerations apply if the joint venture company is incorporated in certain jurisdictions such as the United Kingdom whereby some care is needed to ensure that the joint venture company is not agreeing to fetter its statutory powers (as per <b><em>Russell v Northern Bank</em></b>). As to any specific issues on having the joint venture company be a party to the Agreement, local law advice should be sought.||{% endif %}</div>
+{% else %}
+    {% for x in shareholders %}
+        {% if loop.index==(shareholders|length-1) %}
+            {% if x.partyType=="TrueNorth Entities" %}
+                <div custom-style="Unnumbered Heading1">{{x.entityName}}</div>
+                <div custom-style="Unnumbered Heading1">AND</div>
+                {% else %}
+                <div custom-style="Unnumbered Heading1">{{x.name}}</div>
+                <div custom-style="Unnumbered Heading1">AND</div>
+            {% endif %}
+        {% else %}
+            {% if x.partyType=="TrueNorth Entities" %}
+                <div custom-style="Unnumbered Heading1">{{x.entityName}}</div> 
+                {% else %}
+                <div custom-style="Unnumbered Heading1">{{x.name}}</div>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
 {% endif %}
-
-{% for x in coverPageArray %}
-    
-{% endfor %}
-
-
-
- 
-{%if radioWillTheTargetCompanyBeAPartyToTheSha == 'Yes' %}
-<div custom-style="Unnumbered Heading1">AND</div>
-    <div custom-style="Unnumbered Heading1">{{company[0].name}}</div>
-    {%if radioIsTheTargetAnIndianCompany == 'No'%}||	This template assumes that the joint venture company, which will typically be a company incorporated in India, will be a party to the Agreement. Special considerations apply if the joint venture company is incorporated in certain jurisdictions such as the United Kingdom whereby some care is needed to ensure that the joint venture company is not agreeing to fetter its statutory powers (as per <b>
-                <em>Russell v Northern Bank</em>
-            </b>). As to any specific issues on having the joint venture company be a party to the Agreement, local law advice should be sought.||{% endif %}
-{%endif%}
-
-<div custom-style="Unnumbered Heading1">SHAREHOLDERS' AGREEMENT <br/></div>
+<br><br>
+<div custom-style="Unnumbered Heading1">_____________________________________</div>
+<div custom-style="Unnumbered Heading1">SHAREHOLDERS' AGREEMENT</div>
 <div custom-style="Unnumbered Heading1">relating to {{company[0].name}}</div>
+<div custom-style="Unnumbered Heading1">_____________________________________</div>
 
 <!-- pagebreak -->
-<div custom-style="Pagebreak"></div>
-<p><b>THIS AGREEMENT</b>is made on {{dateAgreementMadeOn}}</p><br>
+<div custom-style="Pagebreak">CONTENTS</div>
+**TOC**
+
+<!-- pagebreak -->
+<div custom-style="Pagebreak"><b>THIS AGREEMENT</b>is made on ……………………………………………………. 20[●]</div>
 <p><b>BETWEEN: </b></p>
 
-<ol type="1">
-    
 {#Describing the shareholders#}
+<ol type="1">
 
-{% for shareholder in shareholders %}
-        {%if radioWillTheTargetCompanyBeAPartyToTheSha == 'Yes'%}
-                {% if shareholder.partyType=='Company'%}
-                        <li>{{shareholder.name}}, a company incorporated under the Companies Act, 2013 with CIN Number {{shareholder.CIN}}, having its registered address at {{shareholder.address}} (hereafter <b>{{shareholder.rank}} {{loop.index}}</b>, which expression shall (unless the context otherwise requires) be deemed to include its successors and permitted assigns){%if loop.last==false%};{%elif loop.last==true%}; and{% endif %}{%if shareholder.name in unsurePromoters%}[Drafting note: To be confirmed if this Party should be a Promoter under this SHA]{% endif %}</li>
-                        {% elif shareholder.partyType=='Company under 1956 Act'%}
-                        <li>{{shareholder.name}}, a company incorporated under the Companies Act, 1956 with CIN Number {{shareholder.CIN}}, having its registered address at {{shareholder.address}} (hereafter <b>{{shareholder.rank}} {{loop.index}}</b>, which expression shall (unless the context otherwise requires) be deemed to include its successors and permitted assigns){%if loop.last==false%};{%elif loop.last==true%}; and{% endif %}{%if shareholder.name in unsurePromoters%}[Drafting note: To be confirmed if this Party should be a Promoter under this SHA]{% endif %}</li>
-                        {% elif shareholder.partyType=='Limited Partnership'%}
-                        <li>{{shareholder.name}}, a limited partnership formed under {{shareholder.law}} with identification number {{shareholder.CIN}}, having its registered office at {{shareholder.address}} and acting by its general partner, {{shareholder.representativeName}}, a {{shareholder.GPEntity}} formed under {{shareholder.GPLaw}}, having its registered office at {{shareholder.GPAddress}} (hereafter <b>{{shareholder.rank}} {{loop.index}}</b>, which expression shall (unless the context otherwise requires) be deemed to include its successors, {{shareholder.bindGeneralPartners}} and permitted assigns){%if loop.last==false%};{%elif loop.last==true%}; and{% endif %}{%if shareholder.name in unsurePromoters%}[Drafting note: To be confirmed if this Party should be a Promoter under this SHA]{% endif %}</li>
-                        {% elif shareholder.partyType=='Limited Liability Partnership'%}
-                        <li>{{shareholder.name}}, a limited liability partnership formed under the Limited Liability Partnership Act, 2008 with identification number {{shareholder.CIN}}, having its registered address at {{shareholder.address}} (hereafter <b>{{shareholder.rank}} {{loop.index}}</b>, which expression shall (unless the context otherwise requires) be deemed to include its successors and permitted assigns){%if loop.last==false%};{%elif loop.last==true%}; and{% endif %}{%if shareholder.name in unsurePromoters%}[Drafting note: To be confirmed if this Party should be a Promoter under this SHA]{% endif %}</li>
-                        {% elif shareholder.partyType=='Trust'%}
-                        <li>{{shareholder.representativeName}} in its capacity as trustee of the {{shareholder.name}}, a trust formed under {{shareholder.law}}, having its registered address at {{shareholder.address}} (hereafter <b>{{shareholder.rank}} {{loop.index}}</b>, which expression shall (unless the context otherwise requires) be deemed to include its successors, trustees from time to time and permitted assigns){%if loop.last==false%};{%elif loop.last==true%}; and{% endif %}{%if shareholder.name in unsurePromoters%}[Drafting note: To be confirmed if this Party should be a Promoter under this SHA]{% endif %}</li>
-                        {% elif shareholder.partyType=='Natural Person'%}
-                        <li>{{shareholder.name}}, being the {%if shareholder.gender=='Male'%}son{%elif shareholder.gender=='Female'%}daughter{%endif%} of {{shareholder.fatherName}} and a resident of {{shareholder.address}} (hereafter <b>{{shareholder.rank}} {{loop.index}}</b>, which expression shall (unless the context otherwise requires) be deemed to include {%if shareholder.gender=='Male'%}his{%elif shareholder.gender=='Female'%}her{%endif%} respective heirs, executors, administrators and permitted assigns){%if loop.last==false%};{%elif loop.last==true%}; and{%if shareholder.name in unsurePromoters%}[Drafting note: To be confirmed if this Party should be a Promoter under this SHA]{% endif %}{% endif %}</li>
-                {% endif %}
-        {%elif radioWillTheTargetCompanyBeAPartyToTheSha=='No'%}
-                {% if shareholder.partyType=='Company'%}
-                        <li>{{shareholder.name}}, a company incorporated under the Companies Act, 2013 with CIN Number {{shareholder.CIN}}, having its registered address at {{shareholder.address}} (hereafter the <b>Buyer</b>, which expression shall (unless the context otherwise requires) be deemed to include its successors and permitted assigns){%if loop.index<(shareholders|length-2)%};{%elif loop.index==(shareholders|length-2)%}; and{% endif %}{%if shareholder.name in unsurePromoters%}[Drafting note: To be confirmed if this Party should be a Promoter under this SHA]{% endif %}</li>
-                        {% elif shareholder.partyType=='Company under 1956 Act'%}
-                        <li>{{shareholder.name}}, a company incorporated under the Companies Act, 1956 with CIN Number {{shareholder.CIN}}, having its registered address at {{shareholder.address}} (hereafter the <b>Buyer</b>, which expression shall (unless the context otherwise requires) be deemed to include its successors and permitted assigns){%if loop.index<(shareholders|length-2)%};{%elif loop.index==(shareholders|length-2)%}; and{% endif %}{%if shareholder.name in unsurePromoters%}[Drafting note: To be confirmed if this Party should be a Promoter under this SHA]{% endif %}</li>
-                        {% elif shareholder.partyType=='Limited Liability Partnership'%}
-                        <li>{{shareholder.name}}, a limited liability partnership formed under the Limited Liability Partnership Act, 2008, having its registered address at {{shareholder.address}} (hereafter the <b>Buyer</b>, which expression shall (unless the context otherwise requires) be deemed to include its successors and permitted assigns){%if loop.index<(shareholders|length-2)%};{%elif loop.index==(shareholders|length-2)%}; and{% endif %}{%if shareholder.name in unsurePromoters%}[Drafting note: To be confirmed if this Party should be a Promoter under this SHA]{% endif %}</li>
-                        {% elif shareholder.partyType=='Limited Partnership'%}
-                        <li>{{shareholder.name}}, a limited partnership formed under {{shareholder.law}} with identification number {{shareholder.CIN}}, having its registered office at {{shareholder.address}} and acting by its general partner, {{shareholder.representativeName}}, a {{shareholder.GPEntity}} formed under {{shareholder.GPLaw}}, having its registered office at {{shareholder.GPAddress}} (hereafter <b>{{shareholder.rank}} {{loop.index}}</b>, which expression shall (unless the context otherwise requires) be deemed to include its successors, {{shareholder.bindGeneralPartners}} and permitted assigns){%if loop.index<(shareholders|length-2)%};{%elif loop.index==(shareholders|length-2)%}; and{% endif %}{%if shareholder.name in unsurePromoters%}[Drafting note: To be confirmed if this Party should be a Promoter under this SHA]{% endif %}</li>
-                        {% elif shareholder.partyType=='Trust'%}
-                        <li>{{shareholder.representativeName}} in its capacity as trustee of the {{shareholder.name}}, a trust formed under {{shareholder.law}}, having its registered address at {{shareholder.address}} (hereafter <b>{{shareholder.rank}} {{loop.index}}</b>, which expression shall (unless the context otherwise requires) be deemed to include its successors, trustees from time to time and permitted assigns){%if loop.last==false%};{%elif loop.last==true%}; and{% endif %}{%if loop.index<(shareholders|length-2)%};{%elif loop.index==(shareholders|length-2)%}; and{% endif %}{%if shareholder.name in unsurePromoters%}[Drafting note: To be confirmed if this Party should be a Promoter under this SHA]{% endif %}</li>
-                        {% elif shareholder.partyType=='Natural Person'%}
-                        <li>{{shareholder.name}}, being the {%if shareholder.gender=='Male'%}son{%elif shareholder.gender=='Female'%}daughter{%endif%} of {{shareholder.fatherName}} and a resident of {{shareholder.address}} (hereafter the <b>Buyer</b>, which expression shall (unless the context otherwise requires) be deemed to include {%if shareholder.gender=='Male'%}his{%elif shareholder.gender=='Female'%}her{%endif%} respective heirs, executors, administrators and permitted assigns){%if loop.index<(shareholders|length-2)%};{%elif loop.index==(shareholders|length-2)%}; and{% endif %}{%if shareholder.name in unsurePromoters%}[Drafting note: To be confirmed if this Party should be a Promoter under this SHA]{% endif %}</li>
-                {% endif %}
+{#When Company is a party to the SHA#}
+{%if radioWillTheTargetCompanyBeAPartyToTheSha == 'Yes' %}
+{% for x in shareholders %}
+{% if x.partyType == "TrueNorth Entities" %}
+{% if loop.index==shareholders|length %}
+        {% if x.entityType == "Limited Liability Partnership" or x.entityType == "Company" or x.entityType == "Company under 1956 Act" %}
+            <li>{{x.entityName}}, a [company][limited liability partnership] [incorporated][formed] under [law under which the company/LLP is constituted]  with [identification][registration] number [number], having its registered office at [address of registered office] (hereafter [insert defined name of Party], which expression shall (unless the context otherwise requires) be deemed to include its successors and permitted assigns);</li>
+        {% elif x.entityType == "Limited Partnership" %}
+            <li>{{x.entityName}}, a limited partnership [formed] under [law under which the limited partnership is constituted] with [identification][registration] number [number], [having its registered office at [address of registered office]] [and acting by its general partner, [name of general partner], a [type of entity] [formed] under [law under which the entity is constituted]  with identification number [identification number], having its registered office at [address of registered office]]  (hereafter [insert defined name of Party], which expression shall (unless the context otherwise requires) be deemed to include its successors [, general partners from time to time] and permitted assigns);</li>
+        {% elif x.entityType == "Trust" %}
+            <li>[PARTY's TRUSTEE] in its capacity as trustee of the {{x.entityName}} a [trust] formed under [law under which the trust is constituted]  with [identification][registration] number [number], having its registered office at [address of registered office] (hereafter [insert defined name of Party], which expression shall (unless the context otherwise requires) be deemed to include its successors, trustees from time to time and permitted assigns);</li>
+        {% elif x.entityType == "Natural Person" %}
+            <li>{{x.entityName}}, [being the son or daughter of [name of parent]] and a [resident][and citizen] of [insert country], of [insert residential address] (hereafter [insert defined name of Party][, which expression shall (unless the context otherwise requires) be deemed to include [his][her] heirs, executors, administrators and permitted assigns]);</li>
         {% endif %}
+    {% else %}
+        {% if x.partyType == "Limited Liability Partnership" or x.partyType == "Company" or x.partyType == "Company under 1956 Act" %}
+            <li>{{x.name}}, a [company][limited liability partnership] [incorporated][formed] under [law under which the company/LLP is constituted]  with [identification][registration] number [number], having its registered office at [address of registered office] (hereafter [insert defined name of Party], which expression shall (unless the context otherwise requires) be deemed to include its successors and permitted assigns);</li>
+        {% elif x.partyType == "Limited Partnership" %}
+            <li>{{x.name}}, a limited partnership [formed] under [law under which the limited partnership is constituted] with [identification][registration] number [number], [having its registered office at [address of registered office]] [and acting by its general partner, [name of general partner], a [type of entity] [formed] under [law under which the entity is constituted]  with identification number [identification number], having its registered office at [address of registered office]]  (hereafter [insert defined name of Party], which expression shall (unless the context otherwise requires) be deemed to include its successors [, general partners from time to time] and permitted assigns);</li>
+        {% elif x.partyType == "Trust" %}
+            <li>[PARTY's TRUSTEE] in its capacity as trustee of the {{x.name}} a [trust] formed under [law under which the trust is constituted]  with [identification][registration] number [number], having its registered office at [address of registered office] (hereafter [insert defined name of Party], which expression shall (unless the context otherwise requires) be deemed to include its successors, trustees from time to time and permitted assigns);</li>
+        {% elif x.partyType == "Natural Person" %}
+            <li>{{x.name}}, [being the son or daughter of [name of parent]] and a [resident][and citizen] of [insert country], of [insert residential address] (hereafter [insert defined name of Party][, which expression shall (unless the context otherwise requires) be deemed to include [his][her] heirs, executors, administrators and permitted assigns]);</li>
+        {% endif %}
+{% endif %}
 {% endfor %}
+{% endif %}
+
 {#Describing the company#}
 {% if company[0].partyType=='Company'%}
     <li>{{company[0].name}}, a company incorporated under the Companies Act, 2013 with CIN Number {{company[0].CIN}}, having its registered address at {{company[0].address}} (hereafter the <b>Company</b>).</li>
