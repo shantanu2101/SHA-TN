@@ -199,7 +199,7 @@
 
         <h3><b>Business</b> means [<em>insert</em>].||	Insert a description of the Business conducted by the Company. ||</h3>{#Business means#}
 
-        <h3><b>Business Day</b> means any day other than Saturday, Sunday and any day on which banks in Mumbai, India and/or {{locationWhoseBanksHoldidaysWillBeConsideredForThePurposesOfBusinessDay}} are closed for regular banking business.</h3>
+        <h3><b>Business Day</b> means any day other than Saturday, Sunday and any day on which banks in Mumbai, India and/or [<em>insert</em>] are closed for regular banking business.</h3>
 
         {%if radioWillThereBeAnAgreedBusinessPlan == 'Yes'%}
         <h3><b>Business Plan</b> means the [annual 3 (three)-year rolling] business plan of the Company {%if radioShouldProvisionsRelatedToGroupCompaniesBeRetained == 'Yes'%}and the Group Companies{% endif %}, adopted from time to time in accordance with this Agreement.</h3>
@@ -399,8 +399,8 @@
             <h4>such Person becomes subject to the appointment of a resolution professional (interim or otherwise), controller, administrator, liquidator, provisional or interim liquidator, conservator, receiver, trustee, custodian, statutory manager or other similar official for it or for all or any of its assets;</h4>
             <h4>an order is made or a resolution passed for such Person's winding-up, official management or liquidation (other than pursuant to a solvent consolidation, reconstruction, amalgamation or merger on terms approved by the other Parties);</h4>
             <h4>such Person becomes an insolvent under administration or action is taken which could result in that event;</h4>
-            <h4>any distress, expropriation, execution, attachment, sequestration or other analogous process instituted which affects any asset or assets of such Person having an aggregate value of {{insolvencyAggregateValue.numbers}} and is not discharged within [10 (ten)] days;</h4>
-            <h4>``refVParaJInsolvencyrefV``a security holder enforces security over or takes possession of any asset or assets of such Person having an aggregate value of {{insolvencyAggregateValue.numbers}} and the security holder does not relinquish possession within [10 (ten)] days; or</h4>
+            <h4>any distress, expropriation, execution, attachment, sequestration or other analogous process instituted which affects any asset or assets of such Person having an aggregate value of [<em>insert</em>] and is not discharged within [10 (ten)] days;</h4>
+            <h4>``refVParaJInsolvencyrefV``a security holder enforces security over or takes possession of any asset or assets of such Person having an aggregate value of [<em>insert</em>] and the security holder does not relinquish possession within [10 (ten)] days; or</h4>
             <h4>anything analogous or having a substantially similar effect to any of the events specified in paragraphs ~~refVParaAInsolvencyrefV~~ to ~~refVParaJInsolvencyrefV~~ above inclusive happens under any Applicable Law.{%if radioIsTheTargetAnIndianCompany == 'No'%}||	May require tailoring for local laws. Local counsel to confirm. ||{% endif %}</h4>
         <h3><b>Intellectual Property</b> means copyright, patents, trademarks, service marks, logos, designs, domain names, utility models, inventions, brand names, database rights, software, know-how, programming, customer lists, supplier lists, trade secrets, business names and any similar rights in any country and the benefit (subject to the burden) of each of the foregoing, in each case whether registered or unregistered and including applications for the grant of registration for any of the foregoing and the right to apply for registration for any of the foregoing in any part of the world. <b>[Substantive Variable 1A: Start]</b></h3>
         
@@ -458,8 +458,8 @@
         {% endif %}
         
         <h3><b>Material Contract</b> means [a contract, agreement or other binding arrangement entered into between the Company {%if radioShouldProvisionsRelatedToGroupCompaniesBeRetained == 'Yes'%}or a Group Company{% endif %} with any Person that:</h3>
-            <h4>has a total value to the Business (as could be reasonably estimated as at the Agreement Date) of more than {{materialContractThresholdForTotalValueToTheBusiness.numbers}};</h4>
-            <h4>involves payments in excess of {{paymentsThresholdForMaterialContracts.numbers}} per annum in the aggregate;</h4>
+            <h4>has a total value to the Business (as could be reasonably estimated as at the Agreement Date) of more than [<em>insert</em>];</h4>
+            <h4>involves payments in excess of [<em>insert</em>] per annum in the aggregate;</h4>
             <h4>subjects the Company to a non-compete obligation; and/ or</h4>
             <h4>is outside the Ordinary Course of Business.]||	To be tailored for the particular transaction. It may be that Material Contracts can be defined with respect to a particular Schedule of this Agreement for instance. To be completed on a deal by deal basis. ||</h4>
         <h3><b>Memorandum</b> means the memorandum of association of the Company.</h3>
