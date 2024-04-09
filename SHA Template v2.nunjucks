@@ -142,7 +142,7 @@
 <ol type="A">
     
     <li>The Company is a public/private company and {%if radioShouldProvisionsRelatedToGroupCompaniesBeRetained == 'Yes'%}together with its Group Companies{% endif %} conducts the Business.</li>
-    <li>{%if conRadioIsAnSPAOrSSAExecutedInConjunctionWithThisAgreement == 'Yes'%}As at the Agreement Date, the Investor(s) {% if radioIsTheInvestmentThroughAnSPV == 'Yes' or radioIsTheInvestmentThroughAnSPV == 'Unsure'%}(which will be [wholly/partially] owned by [{% if nameTN|length>0 %}{{nameTN[0].entityName}}{% else %}True North{% endif %}] on Completion Date) {% endif %} [has/ have] agreed to [purchase/ subscribe for/ purchase and subscribe for] certain Shares, as more particularly set out in the Investment Agreement. Following the acquisition by the Investor(s) of such Shares, the {%endif%}{%if conRadioIsAnSPAOrSSAExecutedInConjunctionWithThisAgreement == 'No'%}The {%endif%} Share Capital will be held on the Effective Date in the manner set out in Schedule 1 (Share Capital of the Company on the Effective Date).</li>
+    <li>{%if conRadioIsAnSPAOrSSAExecutedInConjunctionWithThisAgreement == 'Yes'%}As at the Agreement Date, the Investor(s) {% if radioIsTheInvestmentThroughAnSPV == 'Yes' or radioIsTheInvestmentThroughAnSPV == 'Unsure'%}(which will be [wholly/partially] owned by [{% if nameTN|length>0 %}{{nameTN[0].entityName}}{% else %}True North{% endif %}] on Completion Date) {% endif %} [has/ have] agreed to [purchase/ subscribe for/ purchase and subscribe for] certain Shares, as more particularly set out in the Investment Agreement. Following the acquisition by the Investor(s) of such Shares, the {%endif%}{%if conRadioIsAnSPAOrSSAExecutedInConjunctionWithThisAgreement == 'No'%}The {%endif%} Share Capital will be held on the Effective Date in the manner set out in ~~refVScheduleOnerefV~~ (Share Capital of the Company on the Effective Date).</li>
     <li>The Parties have entered into this Agreement for the purpose of regulating certain matters concerning their rights and relationship with each other, including those relating to the management and operation of the Company {%if radioIsTheTargetAnIndianCompany == 'No'%}and the Group{% endif %} from time to time.</li>
 </ol>
 
@@ -165,13 +165,13 @@
                 <h5>any Person which is a trust:</h5>
                     <h6>of which such Person and/or such Person's Relative(s) is a beneficiary; or</h6>
                     <h6>the trustee of which is Controlled by such Person and/or such Person's Relative(s); or</h6>
-            <h4>which is a body corporate, limited liability partnership or other partnership, trust, firm, society, Hindu Undivided Family or any other entity or association referred to in the definition of Person, a Person either directly or indirectly through one or more intermediate Persons and whether alone or in combination with one or more other Persons, that Controls, is Controlled by, or is under common Control with such Person, and</h4>
+            <h4>``refVParaBrefV``which is a body corporate, limited liability partnership or other partnership, trust, firm, society, Hindu Undivided Family or any other entity or association referred to in the definition of Person, a Person either directly or indirectly through one or more intermediate Persons and whether alone or in combination with one or more other Persons, that Controls, is Controlled by, or is under common Control with such Person, and</h4>
             <h4>without prejudice to the generality of the foregoing, where such Person is the Investor, an Affiliate of the Investor includes:</h4>
-                <h5>any fund, trust, partnership, co-investment entity, subsidiary, special purpose or other vehicle or other Person, which is managed and/or advised by:</h5>
-                    <h6>the Investor{% if radioIsTheInvestmentThroughAnSPV == 'Yes' or radioIsTheInvestmentThroughAnSPV == 'Unsure'%} or {% if nameTN|length>0 %}{{nameTN[0].entityName}}{% else %}True North{% endif %} {%endif%};</h6>
-                    <h6>the investment manager or investment advisor of the Investor{% if radioIsTheInvestmentThroughAnSPV == 'Yes' or radioIsTheInvestmentThroughAnSPV == 'Unsure'%} or {% if nameTN|length>0 %}{{nameTN[0].entityName}}{% else %}True North{% endif %}{%endif%}; and</h6>
-                    <h6>any Affiliate (within the meaning of any other paragraph of this definition) of a Person referred to at paragraph (c)(i)(A) or (c)(i)(B); and</h6>
-                <h5>any Affiliates (within the meaning of paragraph (b) of this definition) of any Person specified in paragraph (c)(i); and</h5>
+                <h5>``refVCOnerefV``any fund, trust, partnership, co-investment entity, subsidiary, special purpose or other vehicle or other Person, which is managed and/or advised by:</h5>
+                    <h6>``refVCOneArefV``the Investor{% if radioIsTheInvestmentThroughAnSPV == 'Yes' or radioIsTheInvestmentThroughAnSPV == 'Unsure'%} or {% if nameTN|length>0 %}{{nameTN[0].entityName}}{% else %}True North{% endif %} {%endif%};</h6>
+                    <h6>``refVCOneBrefV``the investment manager or investment advisor of the Investor{% if radioIsTheInvestmentThroughAnSPV == 'Yes' or radioIsTheInvestmentThroughAnSPV == 'Unsure'%} or {% if nameTN|length>0 %}{{nameTN[0].entityName}}{% else %}True North{% endif %}{%endif%}; and</h6>
+                    <h6>any Affiliate (within the meaning of any other paragraph of this definition) of a Person referred to at paragraph ~~refVCOneArefV~~ or ~~refVCOneBrefV~~; and</h6>
+                <h5>any Affiliates (within the meaning of paragraph ~~refVParaBrefV~~ of this definition) of any Person specified in paragraph ~~refVCOnerefV~~; and</h5>
                 <h5>any other Person under common management with the Investor or any of its Affiliates (within the meaning of any other paragraph of this definition),</h5>
                 <p>but, notwithstanding any of the foregoing, in no case will:</p>
                     <h6>the Company be considered an Affiliate of the Investor; or</h6>
@@ -184,14 +184,14 @@
         <h3><b>Articles</b> means the articles of association of the Company from time to time.{%if radioIsTheTargetAnIndianCompany == 'No'%}||	Tailor as appropriate if the Company is not an Indian company. ||{% endif %}</h3>
         
         {%if radioIsADeadlockResolutionMechanismRequired == 'Yes'%}
-        <h3><b>Auctioneer </b>has the meaning given to it in paragraph (a) of Schedule 4 (<em>Deadlock</em>).</h3>
+        <h3><b>Auctioneer</b>has the meaning given to it in paragraph ~~refVParaAScheduleFourrefV~~ of ~~refVScheduleFourrefV~~ (<em>Deadlock</em>).</h3>
         {%endif%}
 
         <h3><b>BA </b>has the meaning given to it in Clause ~~refVthirteenpointoneAonerefV~~ (<em>ABC and AML</em>).</h3>
         
         {%if radioIsADeadlockResolutionMechanismRequired== 'Yes' %}
-        <h3><b>Bid Notice </b>has the meaning given to it in Schedule 4 (<em>Deadlock</em>).</h3>
-        <h3><b>Bid Price </b>has the meaning given to it in Schedule 4 (<em>Deadlock</em>). <b>[Substantive Variable 9: End]</b></h3>
+        <h3><b>Bid Notice </b>has the meaning given to it in ~~refVScheduleFourrefV~~ (<em>Deadlock</em>).</h3>
+        <h3><b>Bid Price </b>has the meaning given to it in ~~refVScheduleFourrefV~~ (<em>Deadlock</em>). <b>[Substantive Variable 9: End]</b></h3>
         {%endif%}
 
         <h3><b>Big Five Accounting Firm</b> means any of the Indian or overseas affiliates or associates, as the case may be, of: (a) Deloitte Touche Tohmatsu; (b) KPMG; (c) PricewaterhouseCoopers; (d) EY (formerly, Ernst &amp; Young), and (e) Grant Thornton.</h3>
@@ -222,8 +222,8 @@
         <h3><b>Company</b> has the meaning given to it in the preamble to this Agreement.</h3>
         <h3><b>Competing Business </b>has the meaning given to it in Clause  ~~refVfourteenpointonerefV~~ (<em>Terms used in this Clause</em>).</h3>
         <h3>Competitor means:</h3>
-            <h4>an entity engaged in the Business and earning: (i) in excess of [20]% [(twenty per cent)] of its revenues from such business, or (ii) revenues from such business exceeding [20]% [(twenty per cent)] of the Company's revenues from the Business; and</h4>
-            <h4>an Affiliate of an entity described in paragraph (a).</h4>
+            <h4>``refVParaACompetitorrefV``an entity engaged in the Business and earning: (i) in excess of [20]% [(twenty per cent)] of its revenues from such business, or (ii) revenues from such business exceeding [20]% [(twenty per cent)] of the Company's revenues from the Business; and</h4>
+            <h4>an Affiliate of an entity described in paragraph ~~refVParaACompetitorrefV~~.</h4>
         
         {%if conRadioIsAnSPAOrSSAExecutedInConjunctionWithThisAgreement == 'Yes'%}
         <h3><b>Completion</b> has the meaning given to it in the Investment Agreement. <b>[Substantive Variable 1A: End]</b></h3>
@@ -253,24 +253,24 @@
         
         {%if radioIsADeadlockResolutionMechanismRequired == 'Yes'%}
         <h3><b>Deadlock</b> has the meaning given to it in Clause  ~~refVsixteenpointonerefV~~ (<em>Deadlock Resolution</em>).</h3>
-        <h3><b>Deadlock Call Notice </b>has the meaning given to it in Schedule 4 (<em>Deadlock</em>).</h3>
-        <h3><b>Deadlock Call Option </b>has the meaning given to it in Schedule 4 (<em>Deadlock</em>).</h3>
-        <h3><b>Deadlock Call Option Price </b>has the meaning given to it in Schedule 4 (<em>Deadlock</em>).</h3>
-        <h3><b>Deadlock Call Shares </b>has the meaning given to it Schedule 4 (<em>Deadlock</em>).</h3>
+        <h3><b>Deadlock Call Notice </b>has the meaning given to it in ~~refVScheduleFourrefV~~ (<em>Deadlock</em>).</h3>
+        <h3><b>Deadlock Call Option </b>has the meaning given to it in ~~refVScheduleFourrefV~~ (<em>Deadlock</em>).</h3>
+        <h3><b>Deadlock Call Option Price </b>has the meaning given to it in ~~refVScheduleFourrefV~~ (<em>Deadlock</em>).</h3>
+        <h3><b>Deadlock Call Shares </b>has the meaning given to it ~~refVScheduleFourrefV~~ (<em>Deadlock</em>).</h3>
         <h3><b>Deadlock Matter</b> has the meaning given to it in Clause ~~refVsixteenpointthreeBrefV~~ (<em>Deadlock Notice</em>).</h3>
         <h3><b>Deadlock Notice</b> has the meaning given to it in Clause ~~refVsixteenpointthreeBrefV~~ (<em>Deadlock Notice</em>).</h3>
-        <h3><b>Deadlock Option Period </b>has the meaning given to it in Schedule 4 (<em>Deadlock</em>).</h3>
-        <h3><b>Deadlock Put Notice </b>has the meaning given to it in Schedule 4 (<em>Deadlock</em>).</h3>
-        <h3><b>Deadlock Put Option </b>has the meaning given to it in Schedule 4 (<em>Deadlock</em>).</h3>
-        <h3><b>Deadlock Put Option Price </b>has the meaning given to it in Schedule 4 (<em>Deadlock</em>).</h3>
-        <h3><b>Deadlock Put Shares </b>has the meaning given to it in Schedule 4 (<em>Deadlock</em>).</h3>
-        <h3><b>Deadlock Resolution Notice</b> has the meaning given to it in Schedule 4 (<em>Deadlock</em>).</h3>
+        <h3><b>Deadlock Option Period </b>has the meaning given to it in ~~refVScheduleFourrefV~~ (<em>Deadlock</em>).</h3>
+        <h3><b>Deadlock Put Notice </b>has the meaning given to it in ~~refVScheduleFourrefV~~ (<em>Deadlock</em>).</h3>
+        <h3><b>Deadlock Put Option </b>has the meaning given to it in ~~refVScheduleFourrefV~~ (<em>Deadlock</em>).</h3>
+        <h3><b>Deadlock Put Option Price </b>has the meaning given to it in ~~refVScheduleFourrefV~~ (<em>Deadlock</em>).</h3>
+        <h3><b>Deadlock Put Shares </b>has the meaning given to it in ~~refVScheduleFourrefV~~ (<em>Deadlock</em>).</h3>
+        <h3><b>Deadlock Resolution Notice</b> has the meaning given to it in ~~refVScheduleFourrefV~~ (<em>Deadlock</em>).</h3>
         <h3><b>Deadlock Resolution Period </b>has the meaning given to it in Clause   ~~refVsixteenpointfourBrefV~~(<em>Deadlock Resolution</em>).</h3>
         <h3><b>Deadlock Shareholder Representative </b>has the meaning given to it in  ~~refVsixteenpointfourArefV~~ (<em>Deadlock Resolution</em>).</h3>
         <h3><b>Deadlock Shareholders</b> has the meaning given to it in Clause ~~refVsixteenpointthreerefV~~ (<em>Deadlock Notice</em>).</h3>
         {%endif%}
 
-        <h3><b>Deed of Adherence</b> means a deed substantially in the form set out in Schedule 3 (<em>Deed of Adherence</em>). <b>[Substantive Variable EOD: Start]</b></h3>
+        <h3><b>Deed of Adherence</b> means a deed substantially in the form set out in ~~refVScheduleThreerefV~~ (<em>Deed of Adherence</em>). <b>[Substantive Variable EOD: Start]</b></h3>
         {%if radioAreEventOfDefaultProvisionsRequiredInThisAgreement == 'Yes'%}
         <h3><b>Default Call Exercise Notice </b>has the meaning given to it in [Clause ~~refVfifteenpointfourBrefV~~ (<em>Default call and put option</em>) /  ~~refVfifteenpointfourDrefV~~ (<em>Default call and put option</em>)].</h3>
         <h3><b>Default Call Option</b> has the meaning given to it in Clause ~~refVfifteenpointfourAonerefV~~(<em>Default call and put option</em>).</h3>
@@ -325,7 +325,7 @@
         <h3><b>ESG</b> means environment, social and governance.</h3>
 
         {%if radioShouldTheAgreementHaveProvisionsOnAgreedESOP == 'Yes'%}
-        <h3><b>ESOP Plan</b> means the employee incentivization plan contemplating issue of Securities to employees of the Group Company, not exceeding [5% (five per cent)] of the Share Capital of the Company immediately upon Completion, the details of which are specified in Schedule 8 (<em>ESOP Plan</em>).</h3>
+        <h3><b>ESOP Plan</b> means the employee incentivization plan contemplating issue of Securities to employees of the Group Company, not exceeding [5% (five per cent)] of the Share Capital of the Company immediately upon Completion, the details of which are specified in ~~refVScheduleEightrefV~~ (<em>ESOP Plan</em>).</h3>
         {%endif%}
 
         {%if radioAreEventOfDefaultProvisionsRequiredInThisAgreement == 'Yes'%}       
@@ -387,7 +387,7 @@
 
         <h3><b>INR</b> means Indian Rupees, the lawful currency of the Republic of India.{%if radioIsTheTargetAnIndianCompany == 'No'%}||	Replace this and other references to INR and Indian Rupees with USD or other appropriate currency, if the Company will be incorporated in a jurisdiction outside India. ||{% endif %}</h3>
         <h3><b>Insolvency Event</b> means the occurrence of any of these events in relation to a Person:</h3>
-            <h4>such Person is or states that it is unable to pay its debts as and when they fall due;</h4>
+            <h4>``refVParaAInsolvencyrefV``such Person is or states that it is unable to pay its debts as and when they fall due;</h4>
             <h4>such Person is deemed to, or is declared to, be unable to pay its debts under any Applicable Law;</h4>
             <h4>such Person suspends or threatens to suspend making payments on any of its debts as they fall due;</h4>
             <h4>other than pursuant to a solvent consolidation, reconstruction, amalgamation or merger on terms approved by the other Parties, such Person:</h4>
@@ -400,8 +400,8 @@
             <h4>an order is made or a resolution passed for such Person's winding-up, official management or liquidation (other than pursuant to a solvent consolidation, reconstruction, amalgamation or merger on terms approved by the other Parties);</h4>
             <h4>such Person becomes an insolvent under administration or action is taken which could result in that event;</h4>
             <h4>any distress, expropriation, execution, attachment, sequestration or other analogous process instituted which affects any asset or assets of such Person having an aggregate value of {{insolvencyAggregateValue.numbers}} and is not discharged within [10 (ten)] days;</h4>
-            <h4>a security holder enforces security over or takes possession of any asset or assets of such Person having an aggregate value of {{insolvencyAggregateValue.numbers}} and the security holder does not relinquish possession within [10 (ten)] days; or</h4>
-            <h4>anything analogous or having a substantially similar effect to any of the events specified in paragraphs (a) to (j) above inclusive happens under any Applicable Law.{%if radioIsTheTargetAnIndianCompany == 'No'%}||	May require tailoring for local laws. Local counsel to confirm. ||{% endif %}</h4>
+            <h4>``refVParaJInsolvencyrefV``a security holder enforces security over or takes possession of any asset or assets of such Person having an aggregate value of {{insolvencyAggregateValue.numbers}} and the security holder does not relinquish possession within [10 (ten)] days; or</h4>
+            <h4>anything analogous or having a substantially similar effect to any of the events specified in paragraphs ~~refVParaAInsolvencyrefV~~ to ~~refVParaJInsolvencyrefV~~ above inclusive happens under any Applicable Law.{%if radioIsTheTargetAnIndianCompany == 'No'%}||	May require tailoring for local laws. Local counsel to confirm. ||{% endif %}</h4>
         <h3><b>Intellectual Property</b> means copyright, patents, trademarks, service marks, logos, designs, domain names, utility models, inventions, brand names, database rights, software, know-how, programming, customer lists, supplier lists, trade secrets, business names and any similar rights in any country and the benefit (subject to the burden) of each of the foregoing, in each case whether registered or unregistered and including applications for the grant of registration for any of the foregoing and the right to apply for registration for any of the foregoing in any part of the world. <b>[Substantive Variable 1A: Start]</b></h3>
         
         {%if conRadioIsAnSPAOrSSAExecutedInConjunctionWithThisAgreement == 'Yes'%}
@@ -510,7 +510,7 @@
         <h3><b>Original Director </b>has the meaning given to it in Clause ~~refVfourpointtworefV~~ (<em>Alternate director</em>).<b> [Substantive Variable 3B: Start]</b></h3>
         
         {%if conRadioHowManyListsOfReservedMatterRightsWillTheSHAInclude=="3"%}
-        <h3><b>Other Matter</b> means each matter specified in Part C of Schedule 2 (<em>Reserved Matters</em>). </h3>{%endif%}
+        <h3><b>Other Matter</b> means each matter specified in Part ~~refVPartCScheduleTworefV~~ of ~~refVScheduleTworefV~~ (<em>Reserved Matters</em>). </h3>{%endif%}
         
         <h3><b>Party </b>means a party to this Agreement.</h3>
         <h3><b>Paying Party </b>has the meaning given to it in Clause ~~refVtwentythreepointsevenBrefV~~ (<em>Payments free of withholding</em>).</h3>
@@ -533,7 +533,7 @@
         <h3><b>Purchase Notice </b>has the meaning given to it in Clause 10.9(d) (<em>Put Option</em>).</h3><!--reference error-->
         
         {%if radioIsADeadlockResolutionMechanismRequired == 'Yes'%}
-        <h3><b>Purchaser </b>has the meaning given to it in paragraph (c) of Schedule 4 (<em>Deadlock</em>). <b>[Substantive Variable 9: End]</b></h3>
+        <h3><b>Purchaser </b>has the meaning given to it in paragraph ~~refVParaCScheduleFourrefV~~ of ~~refVScheduleFourrefV~~ (<em>Deadlock</em>). <b>[Substantive Variable 9: End]</b></h3>
         {%endif%}
         {%if promoters|length>0 or unsurePromoters|length>0%}
         <h3><b>Put Closing Date</b> has the meaning given to it in Clause 10.9(f) (<em>Put Option</em>).</h3><!--reference error-->
@@ -569,7 +569,7 @@
         {%if radioWillThereBeASetOfPartiesWhoWillBeRepresentedForAllPurposesUnderTheAgreementByOneOfThem == 'Yes'%}
         <h3><b>Representative </b>has the meaning given to it in Clause  ~~refVtwentythreepointeighteenArefV~~   (<em>Representative</em>).</h3>{%endif%}
         
-        <h3><b>Reserved Matter </b>means each matter specified in Schedule 2 (<em>Reserved Matters</em>){%if conRadioHowManyListsOfReservedMatterRightsWillTheSHAInclude=="2" or conRadioHowManyListsOfReservedMatterRightsWillTheSHAInclude=="3"%}i.e. the Shareholder Reserved Matters and Special Matters{%elif conRadioHowManyListsOfReservedMatterRightsWillTheSHAInclude=="3"%}i.e. the Shareholder Reserved Matters, Special Matters and Other Matters {% endif %}.</h3>
+        <h3><b>Reserved Matter </b>means each matter specified in ~~refVScheduleTworefV~~ (<em>Reserved Matters</em>){%if conRadioHowManyListsOfReservedMatterRightsWillTheSHAInclude=="2" or conRadioHowManyListsOfReservedMatterRightsWillTheSHAInclude=="3"%}i.e. the Shareholder Reserved Matters and Special Matters{%elif conRadioHowManyListsOfReservedMatterRightsWillTheSHAInclude=="3"%}i.e. the Shareholder Reserved Matters, Special Matters and Other Matters {% endif %}.</h3>
         
         <h3><b>Restraint Area </b>has the meaning given to it in Clause ~~refVfourteenpointoneCrefV~~ (<em>Terms used in this Clause</em>).</h3>
         <h3><b>Restraint Period </b>has the meaning given to it in Clause ~~refVfouteenpointoneDrefV~~ (<em>Terms used in this Clause</em>).</h3>
@@ -613,8 +613,8 @@
         <h3><b>Shareholder </b>means each shareholder of the Company from time to time.</h3>
         
         {%if conRadioHowManyListsOfReservedMatterRightsWillTheSHAInclude=="2" or conRadioHowManyListsOfReservedMatterRightsWillTheSHAInclude=="3"%}
-        <h3><b>Shareholder Reserved Matter </b>means each matter specified in Part A of Schedule 2 (<em>Reserved Matters</em>).</h3>
-        <h3><b>Special Matter</b> means each matter specified in Part B of Schedule 2 (<em>Reserved Matters</em>).</h3>
+        <h3><b>Shareholder Reserved Matter </b>means each matter specified in Part ~~refVPartAScheduleTworefV~~ of ~~refVScheduleTworefV~~ (<em>Reserved Matters</em>).</h3>
+        <h3><b>Special Matter</b> means each matter specified in Part ~~refVPartBScheduleTworefV~~ of ~~refVScheduleTworefV~~ (<em>Reserved Matters</em>).</h3>
         {%endif%}
         
         <h3><b>Specific Covenants</b> means the obligations in Clause ~~refVsixrefV~~ (<em>Reserved Matters</em>).||	List of specific covenants to be tailored for the transaction. ||</h3>
@@ -1109,7 +1109,7 @@
     {%if promoters|length>0 or unsurePromoters|length>0%}
     <h2><b>Put Option {%if promoters|length>1 or unsurePromoters|length>1%}{%if (promoters|length!=0 or unsurePromoters|length!=0) and radioWillAnyShareholderBeEntitledToSwapItsSharesForListedSecurities == 'Yes'%}Swap {%endif%}{% endif %}</b></h2>
         <h3>At any time after the [7th (seventh)] anniversary of the Completion Date, Exit Right Holder(s)||	Consider the part(ies) that shall have the put option right. This template has been prepared on the basis that the Investors' have the right to sell its shares to the Promoter, but customise according to the transaction. || (the Put Holder) shall have the right (but not the obligation) (the Put Option) to require the Promoter to purchase all of the Shares held by the Put Holder in the Company (the Put Option Shares), and upon exercise of the Put Option, the Promoter shall be obliged to purchase (by itself or through any of its Affiliates or nominees) (the Put Transferee), the Put Option Shares at the Exit Price in accordance with this Clause 10.9 (<em>Put Option</em>).</h3>
-            <h4>The Put Option may be exercised by the Put Holder through delivery of a written notice to the Company and the Promoter(s) (a <b>Put Exercise Notice </b>in the form contained in Schedule 6 (<em>Form of Put Exercise Notice</em>)) notifying the Company and the Promoter(s) that the Put Option is being exercised by the Put Holder. The Put Exercise Notice shall be irrevocable once issued by the Put Holder.</h4>
+            <h4>The Put Option may be exercised by the Put Holder through delivery of a written notice to the Company and the Promoter(s) (a <b>Put Exercise Notice </b>in the form contained in ~~refVScheduleSixrefV~~ (<em>Form of Put Exercise Notice</em>)) notifying the Company and the Promoter(s) that the Put Option is being exercised by the Put Holder. The Put Exercise Notice shall be irrevocable once issued by the Put Holder.</h4>
             <h4>Within [15 (fifteen)] days from the date of the Put Exercise Notice, the Promoter(s) may notify the Put Holder the name(s) of the Put Transferee(s) i.e. its Affiliate(s) or nominee(s) and related KYC information required by the Put Holder through whom the Promoter(s) shall complete the purchase of the Put Option Shares, Provided However That such Affiliate or nominee shall not require any approvals (regulatory or otherwise) in addition to those required by the Promoter(s) to complete the purchase of the Put Option Shares and provided further that notwithstanding any such notification, the Promoter(s) shall be jointly and severally liable with such Affiliate(s) or nominee(s) for performance of the Put Transferee's obligations under this Clause 10.9 (<em>Put Option</em>).<b>[Substantive Variable Swap: Start]</b></h4>
             {% endif %}
             {%if promoters|length>1 or unsurePromoters|length>1%}{%if (promoters|length!=0 or unsurePromoters|length!=0) and radioWillAnyShareholderBeEntitledToSwapItsSharesForListedSecurities == 'Yes'%}
@@ -1139,7 +1139,7 @@
             
     {%if conRadioWillAnyShareholderShareUpsideWithOtherShareholderUponExit == 'Yes'%}
     <h2><b>Upside Sharing</b></h2>
-        <h3>In the event, pursuant to sale of [the Relevant Sale Shares or other full exit from the Company/[all (and not part) of the Securities held by the Investor in accordance with this Agreement], the Investor realises a Return that is higher than the Minimum Realisable Value (<b>Upside</b>), then the Investor shall share an amount equal to [<em>insert</em>]% [(<em>insert</em> per cent)] of the Upside with the {%if radioShareholdersWithWhomUpsideWillBeSharedUponExit == 'Promoter(s)'%}Promoter(s){%elif radioShareholdersWithWhomUpsideWillBeSharedUponExit == 'Identified Shareholders'%}{{ partyReferenceupsideShareholders | joinArray(key='name', terminator='and ', separator=', ') }}{%elif radioShareholdersWithWhomUpsideWillBeSharedUponExit == 'Unsure'%}[<em>insert name of Relevant Shareholders</em>]{% endif %} in cash, [, Provided However That if the Return realized by the Investor after sharing the Upside as specified herein would be less than the Minimum Realisable Value, then the Investor shall share such lower percentage of the Upside with the [<em>insert name of Relevant Shareholders</em>]that, after such sharing, will enable the Investor to realize a return that is equal to the Minimum Realisable Value.]. An illustration with respect to sharing of Upside in certain circumstances is set out in Schedule 5 (<em>Upside Sharing Illustration</em>).</h3>
+        <h3>In the event, pursuant to sale of [the Relevant Sale Shares or other full exit from the Company/[all (and not part) of the Securities held by the Investor in accordance with this Agreement], the Investor realises a Return that is higher than the Minimum Realisable Value (<b>Upside</b>), then the Investor shall share an amount equal to [<em>insert</em>]% [(<em>insert</em> per cent)] of the Upside with the {%if radioShareholdersWithWhomUpsideWillBeSharedUponExit == 'Promoter(s)'%}Promoter(s){%elif radioShareholdersWithWhomUpsideWillBeSharedUponExit == 'Identified Shareholders'%}{{ partyReferenceupsideShareholders | joinArray(key='name', terminator='and ', separator=', ') }}{%elif radioShareholdersWithWhomUpsideWillBeSharedUponExit == 'Unsure'%}[<em>insert name of Relevant Shareholders</em>]{% endif %} in cash, [, Provided However That if the Return realized by the Investor after sharing the Upside as specified herein would be less than the Minimum Realisable Value, then the Investor shall share such lower percentage of the Upside with the [<em>insert name of Relevant Shareholders</em>]that, after such sharing, will enable the Investor to realize a return that is equal to the Minimum Realisable Value.]. An illustration with respect to sharing of Upside in certain circumstances is set out in ~~refVScheduleFiverefV~~ (<em>Upside Sharing Illustration</em>).</h3>
         <h3>The Upside shall be paid [within 30 (thirty) days] after the Investor has actually realised the Minimum Realisable Value and has transferred all the Relevant Sale Shares, whichever is later,  {%if promoters|length>1 or unsurePromoters|length>1%}{%if (promoters|length!=0 or unsurePromoters|length!=0) and radioWillAnyShareholderBeEntitledToSwapItsSharesForListedSecurities == 'Yes'%}, and in the case of securities of the Swap Entity received by the Investor under Clause 10.9 (<em>Put Option</em>), sale of all but not part of such securities and receipt of the Minimum Realisable Value by the Investor, whichever is later{%endif%}{% endif %}.</h3>
     {% endif %}
     {%if partyReferenceLpShareholders|length>0%}
@@ -1345,7 +1345,7 @@
      ``refVsixteenpointfourBrefV``<h3>Each Deadlock Shareholder Representative shall, for a period of [30 (thirty)] Business Days starting on the Business Day after the date on which a Deadlock Notice was given (the <b>Deadlock Resolution Period</b>), attempt in good faith to resolve the Deadlock.</h3>
         <h3>If the Deadlock Shareholder Representatives resolve the Deadlock Matter within the Deadlock Resolution Period, the Deadlock Shareholders shall procure that the Company acts in accordance with the instructions given by the Deadlock Shareholder Representatives.</h3>
     <h2><b>Alternate Deadlock Resolution</b></h2>
-    <h4>If the Deadlock Shareholder Representatives fail to resolve the Deadlock Matter within the Deadlock Resolution Period, the provisions of Schedule 4 (<em>Deadlock</em>) shall apply.</h4>
+    <h4>If the Deadlock Shareholder Representatives fail to resolve the Deadlock Matter within the Deadlock Resolution Period, the provisions of ~~refVScheduleFourrefV~~ (<em>Deadlock</em>) shall apply.</h4>
 {%endif%}
 
 <h1>``refVseventeenrefV``<b>Representations and Warranties</b>||	Tailor as appropriate. These Warranties are drafted on the basis they are given reciprocally by all Parties in respect of themselves only to each other Party. ||</h1>
@@ -1630,7 +1630,7 @@
     {%endif%}
 
 {#Schedule One#}
-<div custom-style="Schedule Heading 1"><br/>Share Capital of the Company on the Effective Date</div>
+<div custom-style="Schedule Heading 1">``refVScheduleOnerefV``Share Capital of the Company on the Effective Date</div>
 <table>
     <thead>
         <tr>
@@ -1656,7 +1656,7 @@
             </th>
             <th>
                 <p>
-                    <strong>Fully paid <br/>(yes/no – If no, specify)</strong>
+                    <strong>Fully paid (yes/no – If no, specify)</strong>
                 </p>
             </th>
             <th>
@@ -1744,9 +1744,9 @@
     </tbody>
 </table>
 {#Schedule Two#}
-<div custom-style="Schedule Heading 1"><br/>Reserved Matters|| List of Reserved matters to be considered in the context of the specific transaction and tailored accordingly. In deciding whether to include each item on this list, consider whether each item is essential in order to protect the interest of {% if nameTN|length>0 %}{{nameTN[0].entityName}}{% else %}True North{% endif %}, as excessive restrictions may hamper the efficient operation of the joint venture. However, if {% if nameTN|length>0 %}{{nameTN[0].entityName}}{% else %}True North{% endif %} is taking only a minority stake in the Company, it may be preferable a more extensive list of reserved matters for its benefit. Conversely, if {% if nameTN|length>0 %}{{nameTN[0].entityName}}{% else %}True North{% endif %} is taking a majority stake, a less extensive list of reserved matters may be preferable, and perhaps confining it to only those which are absolutely critical from a minority investor's perspective. However, on a 50:50 joint venture it might only be additional funding and alterations to the [Company's] constitution/share capital structure that {% if nameTN|length>0 %}{{nameTN[0].entityName}}{% else %}True North{% endif %} might want to have as shareholder reserved matters, reflecting the fact that it has a large degree of control by virtue of its 50% (50 per cent) shareholding (i.e. not even an ordinary resolution can be passed without its consent).|| [Substantive Variable 3a: Start]</div>
+<div custom-style="Schedule Heading 1">``refVScheduleTworefV``Reserved Matters|| List of Reserved matters to be considered in the context of the specific transaction and tailored accordingly. In deciding whether to include each item on this list, consider whether each item is essential in order to protect the interest of {% if nameTN|length>0 %}{{nameTN[0].entityName}}{% else %}True North{% endif %}, as excessive restrictions may hamper the efficient operation of the joint venture. However, if {% if nameTN|length>0 %}{{nameTN[0].entityName}}{% else %}True North{% endif %} is taking only a minority stake in the Company, it may be preferable a more extensive list of reserved matters for its benefit. Conversely, if {% if nameTN|length>0 %}{{nameTN[0].entityName}}{% else %}True North{% endif %} is taking a majority stake, a less extensive list of reserved matters may be preferable, and perhaps confining it to only those which are absolutely critical from a minority investor's perspective. However, on a 50:50 joint venture it might only be additional funding and alterations to the [Company's] constitution/share capital structure that {% if nameTN|length>0 %}{{nameTN[0].entityName}}{% else %}True North{% endif %} might want to have as shareholder reserved matters, reflecting the fact that it has a large degree of control by virtue of its 50% (50 per cent) shareholding (i.e. not even an ordinary resolution can be passed without its consent).|| [Substantive Variable 3a: Start]</div>
 {%if conRadioHowManyListsOfReservedMatterRightsWillTheSHAInclude=="2" or conRadioHowManyListsOfReservedMatterRightsWillTheSHAInclude=="3"%}
-<div custom-style="Schedule Heading 2"><br/>Shareholder Reserved Matters [Substantive Variable 3a: End] [[Substantive Variable Rm: Start]</div>{% endif %}
+<div custom-style="Schedule Heading 2">``refVPartAScheduleTworefV``Shareholder Reserved Matters [Substantive Variable 3a: End] [[Substantive Variable Rm: Start]</div>{% endif %}
 {% if radioIsTheFirstListOFReservedMattersAgreed == 'No' %}
 <div custom-style="Schedule Heading 6">Amendment of constitutional documents;</div>
 <div custom-style="Schedule Heading 6">Any increase, decrease, buy back, redemption, reduction or other alterations to its authorized share capital or issued share capital including any private placement or public issue of securities, issuance of securities with differential voting rights, issue or redemption of preference shares, grant of options for securities and issue of sweat equity, but excluding (i) any issue of New Securities contemplated in Clause 8 (<em>Further Funding</em>) and any change to authorized capital to facilitate such issue, (ii) any transfer of Shares that is permitted under Clause 9 (<em>Transfer of Securities</em>) or 10 (<em>Exit</em>) of this Agreement{%if radioWillTheExitOptionIncludeABuyBack == 'Yes'%}, and (iii) any [buy-back] of Shares specifically contemplated in this Agreement|| Bracketed portion to be included when a Shareholder has the right to require the Company to redeem or buy-back its shares under any circumstances.||{% endif %} [Substantive Variable PS: Start]{%if radioWillThereBeAnyPreferenceSharesOutstandingOrIssued == 'Yes'%}, and any redemption of preference shares specifically contemplated in this Agreement and/ or the Transaction Documents<strong>[Substantive Variable PS: End]</strong>{% endif %};</div>
@@ -1793,7 +1793,7 @@
 <p>
     <strong>[Substantive Variable 3A: Start]</strong>
 </p>
-<div custom-style="Schedule Heading 2"><br/>Special Matters</div>
+<div custom-style="Schedule Heading 2">``refVPartBScheduleTworefV``Special Matters</div>
 {% if radioIsTheSecondListOFReservedMattersAgreed == 'No' %}
 <p>[<em>Insert</em>] <strong>[Substantive Variable 3A: End]</strong>
 </p>
@@ -1805,7 +1805,7 @@
 <p>
     <strong>[Substantive Variable 3B: Start]</strong>
 </p>
-<div custom-style="Schedule Heading 2"><br/>Other Matters</div>
+<div custom-style="Schedule Heading 2">``refVPartCScheduleTworefV``Other Matters</div>
 {% if radioIsTheThirdListOFReservedMattersAgreed == 'No' %}
 <p>[<em>Insert</em>] <strong>[Substantive Variable 3B: End]</strong>
 </p>
@@ -1814,7 +1814,7 @@
 {% endif %}
 {% endif %}
 {#Schedule Three#}
-<div custom-style="Schedule Heading 1"><br/>Deed of Adherence</div>
+<div custom-style="Schedule Heading 1">``refVScheduleThreerefV``Deed of Adherence</div>
 <p>
     <strong>THIS DEED OF ADHERENCE</strong> is made on [●]</p>
 <p>BY [●], a company incorporated in [●] (registered number [●]), whose registered office is at [●] (the <strong>New Shareholder</strong>).</p>
@@ -1878,23 +1878,23 @@
 </p>
 {%if radioIsADeadlockResolutionMechanismRequired == 'Yes'%}
 {#Schedule Four#}
-<div custom-style="Schedule Heading 1"><br/>Deadlock|| This [Schedule 4 (<em>Deadlock</em>)] sets out three suggested alternative approaches to an unbreakable deadlock situation, which can be customised according to the requirements of the transaction and {% if nameTN|length>0 %}{{nameTN[0].entityName}}{% else %}True North{% endif %}'s position in the specific transaction. Use these options alternatively. Consider also whether it is appropriate to include such provisions dealing with the consequences of a Deadlock situation. It may be better for the agreement to be silent on this point, to avoid a party creating a Deadlock situation which it can then exploit/gaming the situation. This should be balanced against the desire for certainty.||
+<div custom-style="Schedule Heading 1">``refVScheduleFourrefV``Deadlock|| This [~~refVScheduleFourrefV~~ (<em>Deadlock</em>)] sets out three suggested alternative approaches to an unbreakable deadlock situation, which can be customised according to the requirements of the transaction and {% if nameTN|length>0 %}{{nameTN[0].entityName}}{% else %}True North{% endif %}'s position in the specific transaction. Use these options alternatively. Consider also whether it is appropriate to include such provisions dealing with the consequences of a Deadlock situation. It may be better for the agreement to be silent on this point, to avoid a party creating a Deadlock situation which it can then exploit/gaming the situation. This should be balanced against the desire for certainty.||
 </div>
 <p>
     <strong>[<em>Option 1: Auction/Shoot‑out</em>]|| This is an option where each Shareholder gives a sealed bid to the other Shareholder constituting (i) an offer to buy all the Shares held by the other Shareholder at the price written in its sealed bid if this is greater than the bid price specified by the other Shareholder in its sealed bid and (ii) an offer to sell all of its own Shares at the bid price specified by the other Shareholder in its sealed bid if that bid price exceeds its own. This tends to favour the more cash rich Shareholder who can afford to offer more for the other Shareholder's Shares.||
     </strong>
 </p>
 <p>If the Deadlock Matter is not resolved by the Deadlock Shareholder Representatives within the Deadlock Resolution Period, then any Deadlock Shareholder may within [30 (thirty)] Business Days after the expiry of the Deadlock Resolution Period serve a written notice (a <strong>Deadlock Resolution Notice</strong>) on the other Deadlock Shareholder(s).</p>
-<div custom-style="Schedule Heading 6">The Deadlock Shareholders shall jointly engage [the Company's statutory auditors/ an independent accounting firm of international repute/ an independent investment bank of international repute] within [20 (twenty)] Business Days following the date of the Deadlock Resolution Notice to act as auctioneer for the purposes of this Schedule 4 (<em>Deadlock</em>) (the <strong>Auctioneer</strong>). If the Deadlock Shareholders do not agree on an Auctioneer within such period, any Deadlock Shareholder may request the [President of the Institute of Chartered Accountants of India] to make the appointment. The fees and expenses of the Auctioneer shall be borne equally by the Deadlock Shareholders.</div>
+<div custom-style="Schedule Heading 6">``refVParaAScheduleFourrefV``The Deadlock Shareholders shall jointly engage [the Company's statutory auditors/ an independent accounting firm of international repute/ an independent investment bank of international repute] within [20 (twenty)] Business Days following the date of the Deadlock Resolution Notice to act as auctioneer for the purposes of this ~~refVScheduleFourrefV~~ (<em>Deadlock</em>) (the <strong>Auctioneer</strong>). If the Deadlock Shareholders do not agree on an Auctioneer within such period, any Deadlock Shareholder may request the [President of the Institute of Chartered Accountants of India] to make the appointment. The fees and expenses of the Auctioneer shall be borne equally by the Deadlock Shareholders.</div>
 <div custom-style="Schedule Heading 6">Within [10 (ten)] Business Days after the appointment of an Auctioneer (<strong>Bid Period</strong>), each Deadlock Shareholder shall be entitled to give a written notice containing a sealed bid (a <strong>Bid Notice</strong>) to the Auctioneer. The Bid Notice of a Deadlock Shareholder shall:</div>
 <div custom-style="Schedule Heading 7">set out the price at which it is willing to purchase for cash in INR all (but not some only) of the Shares held by the other Deadlock Shareholder(s) and their Affiliates (the <strong>Bid Price</strong>);</div>
 <div custom-style="Schedule Heading 7">constitute an offer by that Deadlock Shareholder to purchase all of the Shares held by the other Deadlock Shareholder(s) and their Affiliates at the Bid Price;</div>
-<div custom-style="Schedule Heading 7">constitute an offer by that Deadlock Shareholder to sell all of the Shares held by it and its Affiliates at the Bid Price specified by the other Deadlock Shareholder (who has offered the highest bid in accordance with paragraph (c)) in its Bid Notice if that Bid Price exceeds its own Bid Price;</div>
+<div custom-style="Schedule Heading 7">constitute an offer by that Deadlock Shareholder to sell all of the Shares held by it and its Affiliates at the Bid Price specified by the other Deadlock Shareholder (who has offered the highest bid in accordance with paragraph ~~refVParaCScheduleFourrefV~~) in its Bid Notice if that Bid Price exceeds its own Bid Price;</div>
 <div custom-style="Schedule Heading 7">be irrevocable and unconditional; and</div>
 <div custom-style="Schedule Heading 7">be governed by Indian law.</div>
-<div custom-style="Schedule Heading 6">The Auctioneer shall give a written notice to each Deadlock Shareholder specifying which Deadlock Shareholder (the <strong>Purchaser</strong>) has offered the highest Bid Price within [1 (one)] Business Day of receipt of the last Bid Notice or the end of the Bid Period, whichever is earlier. The Auctioneer shall act as an expert and not as an arbitrator and the Auctioneer's notice shall be final and binding on each of the Deadlock Shareholders (save in the case of manifest error in which case the notice shall be void and shall be remitted to the Auctioneer for correction). The Purchaser shall purchase the Shares held by the other Deadlock Shareholders and their Affiliates at the Bid Price specified in the Purchaser's Bid Notice and the Deadlock Shareholders shall effect such transfer and payment within [5 (five)] Business Days following the date of the Auctioneer's notice.</div>
+<div custom-style="Schedule Heading 6">``refVParaCScheduleFourrefV``The Auctioneer shall give a written notice to each Deadlock Shareholder specifying which Deadlock Shareholder (the <strong>Purchaser</strong>) has offered the highest Bid Price within [1 (one)] Business Day of receipt of the last Bid Notice or the end of the Bid Period, whichever is earlier. The Auctioneer shall act as an expert and not as an arbitrator and the Auctioneer's notice shall be final and binding on each of the Deadlock Shareholders (save in the case of manifest error in which case the notice shall be void and shall be remitted to the Auctioneer for correction). The Purchaser shall purchase the Shares held by the other Deadlock Shareholders and their Affiliates at the Bid Price specified in the Purchaser's Bid Notice and the Deadlock Shareholders shall effect such transfer and payment within [5 (five)] Business Days following the date of the Auctioneer's notice.</div>
 <div custom-style="Schedule Heading 6">If a Deadlock Shareholder fails to serve a Bid Notice, it shall be deemed to have accepted the offer to purchase the Shares held by it and its Affiliates on the terms set out in the Purchaser's Bid Notice, and the Deadlock Shareholders shall effect such transfer and payment within [5 (five)] Business Days following the date of the Auctioneer's notice.</div>
-<div custom-style="Schedule Heading 6">The sale and purchase of all the Shares to the Purchaser in accordance with this Schedule 4 (<em>Deadlock</em>) shall be made on the terms set out in Clause 9.6 (<em>General Provisions</em>).</div>
+<div custom-style="Schedule Heading 6">The sale and purchase of all the Shares to the Purchaser in accordance with this ~~refVScheduleFourrefV~~ (<em>Deadlock</em>) shall be made on the terms set out in Clause 9.6 (<em>General Provisions</em>).</div>
 <p>
     <strong>OR</strong>
 </p>
@@ -1903,37 +1903,37 @@
     </strong>
 </p>
 <div custom-style="Schedule Heading 3">If the Deadlock Matter is not resolved by the Deadlock Shareholder Representatives within the Deadlock Resolution Period, then each Deadlock Shareholder shall have the right (but no obligation) to, within [30 (thirty)] Business Days after the expiry of the Deadlock Resolution Period (the <strong>Deadlock Option Period</strong>):</div>
-<div custom-style="Schedule Heading 6">require the [other Deadlock Shareholders] to purchase all (but not some only) of the Shares held by that Deadlock Shareholder and its Affiliates (the <strong>Deadlock</strong>
+<div custom-style="Schedule Heading 6">``refVParaOneAScheduleFourrefV``require the [other Deadlock Shareholders] to purchase all (but not some only) of the Shares held by that Deadlock Shareholder and its Affiliates (the <strong>Deadlock</strong>
     <strong>Put Shares</strong>) pro rata to the [other Deadlock Shareholders' Entitlement in cash for an amount representing the FMV of the Deadlock Put Shares (the <strong>Deadlock</strong>
-    <strong>Put Option Price</strong>) on the terms set out in this paragraph 1(a) and paragraphs 2, 4 and 5 of this Schedule 4 (<em>Deadlock</em>) (<strong>Deadlock Put Option</strong>), or</div>
-<div custom-style="Schedule Heading 6">purchase all (but not some only) of the Shares held by the [other Deadlock Shareholders] and their Affiliates (the <strong>Deadlock</strong>
+    <strong>Put Option Price</strong>) on the terms set out in this paragraph ~~refVParaOneAScheduleFourrefV~~ and paragraphs ~~refVParaTwoScheduleFourrefV~~, ~~refVParaFourScheduleFourrefV~~ and ~~refVParaFiveScheduleFourrefV~~ of this ~~refVScheduleFourrefV~~ (<em>Deadlock</em>) (<strong>Deadlock Put Option</strong>), or</div>
+<div custom-style="Schedule Heading 6">``refVParaOneBScheduleFourrefV``purchase all (but not some only) of the Shares held by the [other Deadlock Shareholders] and their Affiliates (the <strong>Deadlock</strong>
     <strong>Call Shares</strong>) in cash for an amount no less than the FMV of the Deadlock Call Shares (the <strong>Deadlock</strong>
-    <strong>Call Option Price</strong>) on the terms set out in this paragraph 1(b) and paragraphs 3, 4 and 5 of this Schedule 4 (<em>Deadlock</em>) (the <strong>Deadlock</strong>
+    <strong>Call Option Price</strong>) on the terms set out in this paragraph ~~refVParaOneBScheduleFourrefV~~ and paragraphs ~~refVParaThreeScheduleFourrefV~~, ~~refVParaFourScheduleFourrefV~~ and ~~refVParaFiveScheduleFourrefV~~ of this ~~refVScheduleFourrefV~~ (<em>Deadlock</em>) (the <strong>Deadlock</strong>
     <strong>Call Option</strong>).</div>
-<div custom-style="Schedule Heading 3">The Deadlock Put Option is exercisable in whole but not in part by written notice from a Deadlock Shareholder to the [other Deadlock Shareholders] (the <strong>Deadlock Put Notice</strong>) given at any time during the Deadlock Option Period. A Deadlock Put Notice shall be irrevocable and unconditional. Within 5 (five) Business Days of determination of the FMV of the Deadlock Put Shares in accordance with Clause 11 (<em>Fair Market Value and Share Price Adjustments</em>), the [other Deadlock Shareholders] shall purchase, and the Deadlock Shareholder who has given the Deadlock Put Notice shall sell, the Deadlock Put Shares for the Deadlock Put Option Price.</div>
-<div custom-style="Schedule Heading 3">The Deadlock Call Option is exercisable in whole but not in part by written notice from a Deadlock Shareholder to the [other Deadlock Shareholders] (the <strong>Deadlock Call Notice</strong>) given at any time during the Deadlock Option Period. A Deadlock Call Notice shall be irrevocable and unconditional. Within 5 (five) Business Days of determination of the FMV of the Deadlock Call Shares in accordance with Clause 11 (<em>Fair Market Value and Share Price Adjustments</em>), the [other Deadlock Shareholders] shall sell, and the Deadlock Shareholder who has given the Deadlock Call Notice shall purchase, the Deadlock Call Shares for the Deadlock Call Option Price.</div>
-<div custom-style="Schedule Heading 3">[For the purposes of this paragraph 4. of this Schedule 4 (<em>Deadlock</em>), [each of a Deadlock Call Notice and a Deadlock Put Notice/the Deadlock Call Notice] shall be referred to as a <strong>Deadlock Notice</strong>. If each Deadlock Shareholder receives a Deadlock Notice then the first notice which is properly delivered shall prevail. If two Deadlock Notices are served simultaneously, the Deadlock Notice which states the higher [Deadlock Call Option Price/Deadlock Put Option Price or Deadlock Call Option Price (as the case may be)] shall prevail, except [in the case of the service of two simultaneous Deadlock Put Notices, in which case the Deadlock Put Notice which states the lower Deadlock Put Option Price shall prevail].]</div>
-<div custom-style="Schedule Heading 3">The sale and purchase of the [Deadlock Call Shares/Deadlock Put Shares or the Deadlock Call Shares, as the case may be,] unless provided otherwise in this Schedule 4 (<em>Deadlock</em>) shall be made on the terms set out in this Agreement.</div>
+<div custom-style="Schedule Heading 3">``refVParaTwoScheduleFourrefV``The Deadlock Put Option is exercisable in whole but not in part by written notice from a Deadlock Shareholder to the [other Deadlock Shareholders] (the <strong>Deadlock Put Notice</strong>) given at any time during the Deadlock Option Period. A Deadlock Put Notice shall be irrevocable and unconditional. Within 5 (five) Business Days of determination of the FMV of the Deadlock Put Shares in accordance with Clause 11 (<em>Fair Market Value and Share Price Adjustments</em>), the [other Deadlock Shareholders] shall purchase, and the Deadlock Shareholder who has given the Deadlock Put Notice shall sell, the Deadlock Put Shares for the Deadlock Put Option Price.</div>
+<div custom-style="Schedule Heading 3">``refVParaThreeScheduleFourrefV``The Deadlock Call Option is exercisable in whole but not in part by written notice from a Deadlock Shareholder to the [other Deadlock Shareholders] (the <strong>Deadlock Call Notice</strong>) given at any time during the Deadlock Option Period. A Deadlock Call Notice shall be irrevocable and unconditional. Within 5 (five) Business Days of determination of the FMV of the Deadlock Call Shares in accordance with Clause 11 (<em>Fair Market Value and Share Price Adjustments</em>), the [other Deadlock Shareholders] shall sell, and the Deadlock Shareholder who has given the Deadlock Call Notice shall purchase, the Deadlock Call Shares for the Deadlock Call Option Price.</div>
+<div custom-style="Schedule Heading 3">``refVParaFourScheduleFourrefV``[For the purposes of this paragraph ~~refVParaFourScheduleFourrefV~~. of this ~~refVScheduleFourrefV~~ (<em>Deadlock</em>), [each of a Deadlock Call Notice and a Deadlock Put Notice/the Deadlock Call Notice] shall be referred to as a <strong>Deadlock Notice</strong>. If each Deadlock Shareholder receives a Deadlock Notice then the first notice which is properly delivered shall prevail. If two Deadlock Notices are served simultaneously, the Deadlock Notice which states the higher [Deadlock Call Option Price/Deadlock Put Option Price or Deadlock Call Option Price (as the case may be)] shall prevail, except [in the case of the service of two simultaneous Deadlock Put Notices, in which case the Deadlock Put Notice which states the lower Deadlock Put Option Price shall prevail].]</div>
+<div custom-style="Schedule Heading 3">``refVParaFiveScheduleFourrefV``The sale and purchase of the [Deadlock Call Shares/Deadlock Put Shares or the Deadlock Call Shares, as the case may be,] unless provided otherwise in this ~~refVScheduleFourrefV~~ (<em>Deadlock</em>) shall be made on the terms set out in this Agreement.</div>
 <p>
-    <strong>[Option 3: Sale or Winding‑up of the Company]</strong>|| Sale/winding up is a drastic solution but can help focus the minds of the Shareholders. If they still want to remain in the JV or value will be eroded if a sale/winding‑up is implemented, the Shareholders may strive harder to resolve the Deadlock. An alternative to this [Schedule 4 (<em>Deadlock</em>)] would be to provide that the investment bank has a set period of time to try to sell the Business (e.g. six months), with a liquidator then being appointed to wind‑up the Company if a sale has not been agreed with a third party by such time.||
+    <strong>[Option 3: Sale or Winding‑up of the Company]</strong>|| Sale/winding up is a drastic solution but can help focus the minds of the Shareholders. If they still want to remain in the JV or value will be eroded if a sale/winding‑up is implemented, the Shareholders may strive harder to resolve the Deadlock. An alternative to this [~~refVScheduleFourrefV~~ (<em>Deadlock</em>)] would be to provide that the investment bank has a set period of time to try to sell the Business (e.g. six months), with a liquidator then being appointed to wind‑up the Company if a sale has not been agreed with a third party by such time.||
 </p>
 <p>If the Deadlock Matter is not resolved by the Deadlock Shareholder Representatives within the Deadlock Resolution Period, then any Deadlock Shareholder may send a notice to the Directors requiring them to carry out the procedures necessary for the winding‑up or sale of the Company. The Shareholders shall take all necessary action to ensure that the Company is duly wound‑up or sold in an expeditious manner, including appointing a liquidator to wind‑up the Company or an independent investment bank to realise the maximum value of the Business for the Shareholders, whether by way of sale of the Business or the Shares. The costs of the winding‑up or sale shall be shared equally by the Shareholders.</p>
 {% endif %}
 
 {%if conRadioWillAnyShareholderShareUpsideWithOtherShareholderUponExit == 'Yes'%}
 {#Schedule Five#}
-<div custom-style="Schedule Heading 1"><br/>Upside Sharing Illustration</div>
+<div custom-style="Schedule Heading 1">``refVScheduleFiverefV``Upside Sharing Illustration</div>
 <p>[<em>to be inserted</em>]</p>
 {% endif %}
 
 {#Schedule Six#}
-<div custom-style="Schedule Heading 1"><br/>Form of the Put Exercise Notice</div>
+<div custom-style="Schedule Heading 1">``refVScheduleSixrefV``Form of the Put Exercise Notice</div>
 <p>
     <em>[to be inserted]</em>
 </p>
 <p></p>
 {#Schedule Seven#}
-<div custom-style="Schedule Heading 1"><br/>Other Parties</div>
+<div custom-style="Schedule Heading 1">``refVScheduleSevenrefV``Other Parties</div>
 <p>[<em>Details of multiple parties that are not identified in the Parties clause to be inserted, following the conventions in the Parties section of this Agreement.</em>]</p>
 <p>[<em>Where entities are described in this Schedule, suggest using the following table.</em>]</p>
 <table>
@@ -2109,7 +2109,7 @@
 </p>
 {%if radioShouldTheAgreementHaveProvisionsOnAgreedESOP == 'Yes'%}
 {#Schedule Eight#}
-<div custom-style="Schedule Heading 1"><br/>ESOP Plan</div>
+<div custom-style="Schedule Heading 1">``refVScheduleEightrefV``ESOP Plan</div>
 <p>[<em>insert</em>]<strong> [Substantive Variable ESOP: End]</strong>
 </p>
 {% endif %}
