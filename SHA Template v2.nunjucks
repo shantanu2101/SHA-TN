@@ -19,13 +19,18 @@
 {% endif %}
 {% endfor %}
 
-{%set counterPromoter=0%}
-{%set counterUnsurePromoters=0%}
-{% for x in promoters %}
-    {% if x.partyType=='Natural Person' %}
-        {%set counter=1%}
+{%set counterNotSure = namespace(value=0) %}
+{% for x in shareholders %}
+    {% if x.partyType == "TrueNorth Entities" %}
+        {% if x.entityType == "Not Sure" %}
+            {%set counterNotSure.value = counterNotSure.value + 1 %}
+        {% endif %}
+    {% elif x.partyType == "Not Sure" %}
+        {%set counterNotSure.value = counterNotSure.value + 1 %}
     {% endif %}
 {% endfor %}
+
+
 
 {#Cover page#}
 {%if radioWillTheTargetCompanyBeAPartyToTheSha == 'No'%}
