@@ -26,6 +26,7 @@
         {%set counter=1%}
     {% endif %}
 {% endfor %}
+
 {#Cover page#}
 {%if radioIsTheTargetAnIndianCompany == 'No'%}
     {% for x in shareholders %}
@@ -45,7 +46,7 @@
             {% endif %}
         {% endif %}
     {% endfor %}
-<div custom-style="Unnumbered Heading1">{{shareholders[0].name}}{%if radioIsTheTargetAnIndianCompany == 'No'%}|| This template assumes that the joint venture company, which will typically be a company incorporated in India, will be a party to the Agreement. Special considerations apply if the joint venture company is incorporated in certain jurisdictions such as the United Kingdom whereby some care is needed to ensure that the joint venture company is not agreeing to fetter its statutory powers (as per <b><em>Russell v Northern Bank</em></b>). As to any specific issues on having the joint venture company be a party to the Agreement, local law advice should be sought.||{% endif %}</div>
+<div custom-style="Unnumbered Heading1">{{company[0].name}}{%if radioIsTheTargetAnIndianCompany == 'No'%}|| This template assumes that the joint venture company, which will typically be a company incorporated in India, will be a party to the Agreement. Special considerations apply if the joint venture company is incorporated in certain jurisdictions such as the United Kingdom whereby some care is needed to ensure that the joint venture company is not agreeing to fetter its statutory powers (as per <b><em>Russell v Northern Bank</em></b>). As to any specific issues on having the joint venture company be a party to the Agreement, local law advice should be sought.||{% endif %}</div>
 {% else %}
     {% for x in shareholders %}
         {% if loop.index==(shareholders|length-1) %}
@@ -68,7 +69,7 @@
 <br><br>
 <div custom-style="Unnumbered Heading1">_____________________________________</div>
 <div custom-style="Unnumbered Heading1">SHAREHOLDERS' AGREEMENT</div>
-<div custom-style="Unnumbered Heading1">relating to {{shareholders[0].name}}</div>
+<div custom-style="Unnumbered Heading1">relating to {{company[0].name}}</div>
 <div custom-style="Unnumbered Heading1">_____________________________________</div>
 
 <!-- pagebreak -->
@@ -107,7 +108,7 @@
         {% endif %}
 {% endif %}
 {% endfor %}
-<li>{{shareholders[0].name}}, a company incorporated under [law under which the Company is constituted]|| For instance: the laws of India; Small Industries Development Bank of India Act, 1989; Articles of Agreement among its member countries including the Republic of India; Indian Trusts Act 1882 and registered with the Securities and Exchange Board of India as a venture capital fund under the Securities and Exchange Board of India (Venture Capital Fund) Regulations 1996; Limited Liability Partnership Act 2008, Companies Act, 1956, Companies Act 2013 or other Applicable Law.||  with [identification][registration] number [number], having its registered office at [address of registered office] (hereafter Company).|| As this Agreement relates specifically to the Company and cannot be assigned by the Company, wording regarding permitted successors and assigns has not been included. If the joint venture vehicle is an entity other than a company, tailor as required. This Agreement assumes a company is the joint venture vehicle.||</li>
+<li>{{company[0].name}}, a company incorporated under [law under which the Company is constituted]|| For instance: the laws of India; Small Industries Development Bank of India Act, 1989; Articles of Agreement among its member countries including the Republic of India; Indian Trusts Act 1882 and registered with the Securities and Exchange Board of India as a venture capital fund under the Securities and Exchange Board of India (Venture Capital Fund) Regulations 1996; Limited Liability Partnership Act 2008, Companies Act, 1956, Companies Act 2013 or other Applicable Law.||  with [identification][registration] number [number], having its registered office at [address of registered office] (hereafter Company).|| As this Agreement relates specifically to the Company and cannot be assigned by the Company, wording regarding permitted successors and assigns has not been included. If the joint venture vehicle is an entity other than a company, tailor as required. This Agreement assumes a company is the joint venture vehicle.||</li>
 {% else %}
 {#When company is not party to the SHA#}
 {% for x in shareholders %}
