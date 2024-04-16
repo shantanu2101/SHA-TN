@@ -28,7 +28,7 @@
 {% endfor %}
 
 {#Cover page#}
-{%if radioIsTheTargetAnIndianCompany == 'No'%}
+{%if radioWillTheTargetCompanyBeAPartyToTheSha == 'No'%}
     {% for x in shareholders %}
         {% if loop.index==(shareholders|length) %}
             {% if x.partyType=="TrueNorth Entities" %}
@@ -144,7 +144,7 @@
     
     <li>The Company is a public/private company and {%if radioShouldProvisionsRelatedToGroupCompaniesBeRetained == 'Yes'%}together with its Group Companies{% endif %} conducts the Business.</li>
     <li>{%if conRadioIsAnSPAOrSSAExecutedInConjunctionWithThisAgreement == 'Yes'%}As at the Agreement Date, the Investor(s) {% if radioIsTheInvestmentThroughAnSPV == 'Yes' or radioIsTheInvestmentThroughAnSPV == 'Unsure'%}(which will be [wholly/partially] owned by [{% if nameTN|length>0 %}{{nameTN[0].entityName}}{% else %}True North{% endif %}] on Completion Date) {% endif %} [has/ have] agreed to [purchase/ subscribe for/ purchase and subscribe for] certain Shares, as more particularly set out in the Investment Agreement. Following the acquisition by the Investor(s) of such Shares, the {%endif%}{%if conRadioIsAnSPAOrSSAExecutedInConjunctionWithThisAgreement == 'No'%}The {%endif%} Share Capital will be held on the Effective Date in the manner set out in ~~refVScheduleOnerefV~~ (Share Capital of the Company on the Effective Date).</li>
-    <li>The Parties have entered into this Agreement for the purpose of regulating certain matters concerning their rights and relationship with each other, including those relating to the management and operation of the Company {%if radioIsTheTargetAnIndianCompany == 'No'%}and the Group{% endif %} from time to time.</li>
+    <li>The Parties have entered into this Agreement for the purpose of regulating certain matters concerning their rights and relationship with each other, including those relating to the management and operation of the Company {%if radioShouldProvisionsRelatedToGroupCompaniesBeRetained == 'No'%}and the Group{% endif %} from time to time.</li>
 </ol>
 
 {#main clauses#}
