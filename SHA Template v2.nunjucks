@@ -104,7 +104,7 @@
                 {% elif x.entityType == "Natural Person" %}
                     <li>{{x.name}}, [being the son or daughter of [name of parent]] and a [resident][and citizen] of [insert country], of [insert residential address] (hereafter [insert defined name of Party][, which expression shall (unless the context otherwise requires) be deemed to include [his][her] heirs, executors, administrators and permitted assigns]);{% if loop.index == shareholders | length %} and{% endif %}
                     </li>
-                {% elif x.entityType == "Not Sure" and counterNotSure.value > 1 %}
+                {% elif x.entityType == "Not Sure" and counterNotSure.value>1%}
                     <li>{{x.name}}</li>
                     <h3>
                         <b>[Drafting note: Please use the descriptions below for each party depending on the nature/ form of organization of the party:</b>
@@ -132,7 +132,7 @@
                 {% elif x.partyType == "Natural Person" %}
                     <li>{{x.name}}, [being the son or daughter of [name of parent]] and a [resident][and citizen] of [insert country], of [insert residential address] (hereafter [insert defined name of Party][, which expression shall (unless the context otherwise requires) be deemed to include [his][her] heirs, executors, administrators and permitted assigns]);{% if loop.index == shareholders | length %} and{% endif %}
                     </li>
-                {% elif x.partyType == "Not Sure" and counterNotSure.value > 1 %}
+                {% elif x.partyType == "Not Sure" and counterNotSure.value>1%}
                     <li>{{x.name}}</li>
                     <h3>
                         <b>[Drafting note: Please use the descriptions below for each party depending on the nature/ form of organization of the party:</b>
@@ -167,7 +167,7 @@
                 {% elif x.entityType == "Natural Person" %}
                     <li>{{x.name}}, [being the son or daughter of [name of parent]] and a [resident][and citizen] of [insert country], of [insert residential address] (hereafter [insert defined name of Party][, which expression shall (unless the context otherwise requires) be deemed to include [his][her] heirs, executors, administrators and permitted assigns]);{% if loop.index == (shareholders | length - 1) %} and{% endif %}
                     </li>
-                {% elif x.entityType == "Not Sure" and counterNotSure.value > 1 %}
+                {% elif x.entityType == "Not Sure" and counterNotSure.value>1%}
                     <li>{{x.name}}</li>
                     <h3>
                         <b>[Drafting note: Please use the descriptions below for each party depending on the nature/ form of organization of the party:</b>
@@ -195,7 +195,7 @@
                 {% elif x.partyType == "Natural Person" %}
                     <li>{{x.name}}, [being the son or daughter of [name of parent]] and a [resident][and citizen] of [insert country], of [insert residential address] (hereafter [insert defined name of Party][, which expression shall (unless the context otherwise requires) be deemed to include [his][her] heirs, executors, administrators and permitted assigns]);{% if loop.index == (shareholders | length - 1) %} and{% endif %}
                     </li>
-                {% elif x.partyType == "Not Sure" and counterNotSure.value > 1 %}
+                {% elif x.partyType == "Not Sure" and counterNotSure.value>1%}
                     <li>{{x.name}}</li>
                     <h3>
                         <b>[Drafting note: Please use the descriptions below for each party depending on the nature/ form of organization of the party:</b>
