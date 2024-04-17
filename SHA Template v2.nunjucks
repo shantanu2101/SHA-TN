@@ -268,7 +268,7 @@
         
         {%if radioIsADeadlockResolutionMechanismRequired== 'Yes' %}
         <h3><b>Bid Notice </b>has the meaning given to it in ~~refVScheduleFourrefV~~ (<em>Deadlock</em>).</h3>
-        <h3><b>Bid Price </b>has the meaning given to it in ~~refVScheduleFourrefV~~ (<em>Deadlock</em>). <b>[Substantive Variable 9: End]</b></h3>
+        <h3><b>Bid Price </b>has the meaning given to it in ~~refVScheduleFourrefV~~ (<em>Deadlock</em>).</h3>
         {%endif%}
 
         <h3><b>Big Five Accounting Firm</b> means any of the Indian or overseas affiliates or associates, as the case may be, of: (a) Deloitte Touche Tohmatsu; (b) KPMG; (c) PricewaterhouseCoopers; (d) EY (formerly, Ernst &amp; Young), and (e) Grant Thornton.</h3>
@@ -303,7 +303,7 @@
             <h4>an Affiliate of an entity described in paragraph ~~refVParaACompetitorrefV~~.</h4>
         
         {%if conRadioIsAnSPAOrSSAExecutedInConjunctionWithThisAgreement == 'Yes'%}
-        <h3><b>Completion</b> has the meaning given to it in the Investment Agreement. <b>[Substantive Variable 1A: End]</b></h3>
+        <h3><b>Completion</b> has the meaning given to it in the Investment Agreement.</h3>
         {%endif%}
 
         <h3>Completion Date {%if conRadioIsAnSPAOrSSAExecutedInConjunctionWithThisAgreement == 'Yes'%}has the meaning given to it in the Investment Agreement{%elif conRadioIsAnSPAOrSSAExecutedInConjunctionWithThisAgreement == 'No'%} means {{dateDateOfCompletion}}||	The term 'Completion Date' is used to define timelines for exit rights, computation of IRR etc. Particularly if the Agreement is an amendment or restatement of an existing SHA, consider if the original Completion Date should be referenced here. || {%endif%}.</h3>
@@ -347,7 +347,7 @@
         <h3><b>Deadlock Shareholders</b> has the meaning given to it in Clause ~~refVsixteenpointthreerefV~~ (<em>Deadlock Notice</em>).</h3>
         {%endif%}
 
-        <h3><b>Deed of Adherence</b> means a deed substantially in the form set out in ~~refVScheduleThreerefV~~ (<em>Deed of Adherence</em>). <b>[Substantive Variable EOD: Start]</b></h3>
+        <h3><b>Deed of Adherence</b> means a deed substantially in the form set out in ~~refVScheduleThreerefV~~ (<em>Deed of Adherence</em>).</h3>
         {%if radioAreEventOfDefaultProvisionsRequiredInThisAgreement == 'Yes'%}
         <h3><b>Default Call Exercise Notice </b>has the meaning given to it in [Clause ~~refVfifteenpointfourBrefV~~ (<em>Default call and put option</em>) / Clause ~~refVfifteenpointfourDrefV~~ (<em>Default call and put option</em>)].</h3>
         <h3><b>Default Call Option</b> has the meaning given to it in Clause ~~refVfifteenpointfourAonerefV~~ (<em>Default call and put option</em>).</h3>
@@ -459,7 +459,7 @@
         
         {%if radioAreEventOfDefaultProvisionsRequiredInThisAgreement == 'Yes'%}
         <h3><b>Initial Default Call Exercise Notice</b> has the meaning given to it in Clause ~~refVfifteenpointfourDrefV~~  (<em>Default call and put option</em>).</h3>
-        <h3><b>Initial Default Put Exercise Notice</b> has the meaning given to it in Clause ~~refVfifteenpointfourErefV~~ (<em>Default call and put option</em>).<b> [Substantive Variable EOD: End]</b></h3>
+        <h3><b>Initial Default Put Exercise Notice</b> has the meaning given to it in Clause ~~refVfifteenpointfourErefV~~ (<em>Default call and put option</em>).</h3>
         {%endif%}
 
         <h3><b>INR</b> means Indian Rupees, the lawful currency of the Republic of India.{%if radioIsTheTargetAnIndianCompany == 'No'%}||	Replace this and other references to INR and Indian Rupees with USD or other appropriate currency, if the Company will be incorporated in a jurisdiction outside India. ||{% endif %}</h3>
@@ -479,7 +479,7 @@
             <h4>any distress, expropriation, execution, attachment, sequestration or other analogous process instituted which affects any asset or assets of such Person having an aggregate value of [<em>insert</em>] and is not discharged within [10 (ten)] days;</h4>
             <h4>``refVParaJInsolvencyrefV``a security holder enforces security over or takes possession of any asset or assets of such Person having an aggregate value of [<em>insert</em>] and the security holder does not relinquish possession within [10 (ten)] days; or</h4>
             <h4>anything analogous or having a substantially similar effect to any of the events specified in paragraphs ~~refVParaAInsolvencyrefV~~ to ~~refVParaJInsolvencyrefV~~ above inclusive happens under any Applicable Law.{%if radioIsTheTargetAnIndianCompany == 'No'%}||	May require tailoring for local laws. Local counsel to confirm. ||{% endif %}</h4>
-        <h3><b>Intellectual Property</b> means copyright, patents, trademarks, service marks, logos, designs, domain names, utility models, inventions, brand names, database rights, software, know-how, programming, customer lists, supplier lists, trade secrets, business names and any similar rights in any country and the benefit (subject to the burden) of each of the foregoing, in each case whether registered or unregistered and including applications for the grant of registration for any of the foregoing and the right to apply for registration for any of the foregoing in any part of the world. <b>[Substantive Variable 1A: Start]</b></h3>
+        <h3><b>Intellectual Property</b> means copyright, patents, trademarks, service marks, logos, designs, domain names, utility models, inventions, brand names, database rights, software, know-how, programming, customer lists, supplier lists, trade secrets, business names and any similar rights in any country and the benefit (subject to the burden) of each of the foregoing, in each case whether registered or unregistered and including applications for the grant of registration for any of the foregoing and the right to apply for registration for any of the foregoing in any part of the world.</h3>
         
         {%if conRadioIsAnSPAOrSSAExecutedInConjunctionWithThisAgreement == 'Yes'%}
        
@@ -579,7 +579,7 @@
         <h3><b>Offer Period </b>has the meaning given to it in Clause ~~refVninepointfourCrefV~~ (<em>Right of First Offer</em>).</h3>{%endif%}
         <h3><b>Order</b> shall mean any order, injunction, judgment, decree, ruling, writ, assessment, or award of a court, tribunal, arbitration or decision-making body or panel or a Governmental Authority that is binding on a Party.</h3>
         <h3><b>Ordinary Course of Business</b> means, in relation to a Person, an action that is recurring in nature and is undertaken in the usual, regular, and ordinary course of such Person's normal day-to-day operations consistent with past practices and customs but only to the extent consistent with Applicable Laws.</h3>
-        <h3><b>Original Director </b>has the meaning given to it in Clause ~~refVfourpointtworefV~~ (<em>Alternate director</em>).<b> [Substantive Variable 3B: Start]</b></h3>
+        <h3><b>Original Director </b>has the meaning given to it in Clause ~~refVfourpointtworefV~~ (<em>Alternate director</em>).</h3>
         
         {%if conRadioHowManyListsOfReservedMatterRightsWillTheSHAInclude=="3"%}
         <h3><b>Other Matter</b> means each matter specified in Part ~~refVPartCScheduleTworefV~~ of ~~refVScheduleTworefV~~ (<em>Reserved Matters</em>). </h3>{%endif%}
@@ -595,7 +595,7 @@
         <h3><b>Permitted Encumbrance</b> means [<em>insert</em>]</h3>
         
         {% if radioIsTheInvestmentThroughAnSPV == 'Yes' or radioIsTheInvestmentThroughAnSPV == 'Unsure'%}
-        <h3><b>Permitted Lender</b> means a scheduled commercial bank or a non-banking financial company, which is not a Competitor, from whom the Investor may borrow money for the purpose of subscribing for its Shares (<b>Lender</b>), and/or any other scheduled commercial bank or a non-banking financial company, which is not a Competitor, to whom such Lender may assign or transfer such loan and the security in relation thereto, or part thereof.<b> [Substantive Variable SPV: End]</b></h3>
+        <h3><b>Permitted Lender</b> means a scheduled commercial bank or a non-banking financial company, which is not a Competitor, from whom the Investor may borrow money for the purpose of subscribing for its Shares (<b>Lender</b>), and/or any other scheduled commercial bank or a non-banking financial company, which is not a Competitor, to whom such Lender may assign or transfer such loan and the security in relation thereto, or part thereof.</h3>
         {%endif%}
         
         <h3><b>Person</b> means any individual, sole proprietorship, association (including unincorporated association), unincorporated organisation, venture or joint venture, body corporate, corporation (including any non-profit corporation), limited or unlimited liability company, general partnership, limited partnership, limited liability partnership, estate, trust, society, firm, Hindu Undivided Family, Governmental Authority, or any other enterprise or other entity, in each case, whether or not having separate legal personality and whether acting in an individual, fiduciary or other capacity.</h3>
@@ -608,7 +608,7 @@
         {% endif %}
         
         {%if radioIsADeadlockResolutionMechanismRequired == 'Yes'%}
-        <h3><b>Purchaser </b>has the meaning given to it in paragraph ~~refVParaCScheduleFourrefV~~ of ~~refVScheduleFourrefV~~ (<em>Deadlock</em>). <b>[Substantive Variable 9: End]</b></h3>
+        <h3><b>Purchaser </b>has the meaning given to it in paragraph ~~refVParaCScheduleFourrefV~~ of ~~refVScheduleFourrefV~~ (<em>Deadlock</em>).</h3>
         {%endif%}
         {%if promoters|length>0 or unsurePromoters|length>0%}
         <h3><b>Put Closing Date</b> has the meaning given to it in Clause ~~refVTenPointEightFrefV~~  (<em>Put Option</em>).</h3><!--reference error-->
@@ -620,7 +620,7 @@
         <!--reference error unitl here-->
         
         {%if radioWillExitOptionsIncludeQIPO == 'Yes'%}
-        <h3><b>QIPO</b> means the admission of the Shares to listing on the National Stock Exchange of India, BSE Limited (formerly known as the Bombay Stock Exchange)||	Consider if specific reference to any of the following exchanges is required: the New York Stock Exchange, the NASDAQ Stock Market, the London Stock Exchange, the Singapore Exchange, the Hong Kong Stock Exchange. || or any other reputable and internationally recognized automated quotation system(s) or stock exchange(s) as may be mutually agreed upon in writing between the Shareholders at a listing price which would enable the Exit Right Holder(s) to realize the Exit Price if it sold its Shares in an offer for sale in connection with such listing.||	Consider if a QIPO should be defined with reference to a minimum fund raising size (i.e. where the Company receives at least [INR][<em>insert</em>] in gross proceeds) or market capitalisation. ||<b>[Substantive Variable QIPO: End]</b></h3>
+        <h3><b>QIPO</b> means the admission of the Shares to listing on the National Stock Exchange of India, BSE Limited (formerly known as the Bombay Stock Exchange)||	Consider if specific reference to any of the following exchanges is required: the New York Stock Exchange, the NASDAQ Stock Market, the London Stock Exchange, the Singapore Exchange, the Hong Kong Stock Exchange. || or any other reputable and internationally recognized automated quotation system(s) or stock exchange(s) as may be mutually agreed upon in writing between the Shareholders at a listing price which would enable the Exit Right Holder(s) to realize the Exit Price if it sold its Shares in an offer for sale in connection with such listing.||	Consider if a QIPO should be defined with reference to a minimum fund raising size (i.e. where the Company receives at least [INR][<em>insert</em>] in gross proceeds) or market capitalisation. ||</h3>
         {%endif%}
 
         <h3><b>Qualified Sale</b> means a sale of Shares or the business or assets of the Company for cash or listed securities which would enable the Exit Right Holder(s) to realize the Exit Price.</h3>
@@ -638,7 +638,7 @@
         <h3><b>Relevant Parties </b>has the meaning given to it in Clause  ~~refVtwentythreepointeighteenArefV~~ (<em>Representative</em>).</h3>
         {%endif%}
         
-        <h3><b>Relevant Sale Shares </b>means the Shares acquired by the Investor on Completion Date [and at any time thereafter pursuant to {%if conRadioWhoWillHaveTheAntiDilutionRightsUnderThisAgreement!="Nil"%}Clause ~~refVeightpointsixrefV~~ (<em>Anti-Dilution</em>),{% endif %} <b>[Substantive Variable AD: End]</b>Clause ~~refVninerefV~~ (<em>Transfer of Securities</em>) or Clause ~~refVtenrefV~~ (<em>Exit</em>)].</h3>
+        <h3><b>Relevant Sale Shares </b>means the Shares acquired by the Investor on Completion Date [and at any time thereafter pursuant to {%if conRadioWhoWillHaveTheAntiDilutionRightsUnderThisAgreement!="Nil"%}Clause ~~refVeightpointsixrefV~~ (<em>Anti-Dilution</em>),{% endif %} Clause ~~refVninerefV~~ (<em>Transfer of Securities</em>) or Clause ~~refVtenrefV~~ (<em>Exit</em>)].</h3>
         <h3><b>Relevant Securities </b>has the meaning given to it in Clause ~~refVninepointtworefV~~ (<em>Transfers to Affiliates</em>).</h3>
         
         {%if radioWillThereBeASetOfPartiesWhoWillBeRepresentedForAllPurposesUnderTheAgreementByOneOfThem == 'Yes'%}
@@ -649,7 +649,7 @@
         <h3><b>Restraint Area </b>has the meaning given to it in Clause ~~refVfourteenpointoneCrefV~~ (<em>Terms used in this Clause</em>).</h3>
         <h3><b>Restraint Period </b>has the meaning given to it in Clause ~~refVfouteenpointoneDrefV~~ (<em>Terms used in this Clause</em>).</h3>
         <h3><b>Restricted Person </b>means a person whose name appears on the Sanctions Lists released by the United Nations, the Office of Foreign Assets and Control (OFAC), the European Union (EU), the Financial Intelligence Unit, India (FIU-IND) or any other Governmental Authority relevant to the Investor or the Company, from time to time.</h3>
-        <h3><b>Restricted Shareholder </b>has the meaning given to it in Clause ~~refVfourteenpointoneErefV~~ (<em>Terms used in this Clause</em>).<b> [Substantive Variable 6: Start] </b></h3>
+        <h3><b>Restricted Shareholder </b>has the meaning given to it in Clause ~~refVfourteenpointoneErefV~~ (<em>Terms used in this Clause</em>).</h3>
         
         {%if conRadioWillAnyShareholderShareUpsideWithOtherShareholderUponExit == 'Yes'%}
         <h3><b>Return</b> means all returns actually received by the Investor in respect of the Relevant Sale Shares including dividends, redemption value, interest, all other receipts in cash (other than any payments related to indemnity), securities (valued at issue price) and liquidation proceeds distributed to the Investor, prior to deduction of (a) any taxes (including any income tax levied on the Investor under any Applicable Law, in any jurisdiction) from the consideration received by the Investor in relation to the sale of the Relevant Sale Shares and (b) any expenses or other transactional fees, including legal fees and broker commission incurred by the Investor in connection with the sale of the Relevant Sale Shares, <em>less</em> any amount paid by the Investor to fulfil any indemnity claim(s) which has arisen due to any act or omission attributable to the Company and/or the Promoter. </h3>{%endif%}
@@ -745,7 +745,7 @@
         <h3><b>Valuation Report </b>has the meaning given to it in Clause ~~refVelevenpointtwoIrefV~~ (<em>Valuer's Determination of FMV</em>).</h3>
         {%endif%}
 
-        <h3><b>Valuer</b> has the meaning given to it in Clause ~~refVelevenpointtwoArefV~~ (<em>Valuer's Determination of FMV</em>).<b>[Substantive Variable TP: Start]</b></h3>
+        <h3><b>Valuer</b> has the meaning given to it in Clause ~~refVelevenpointtwoArefV~~ (<em>Valuer's Determination of FMV</em>).</h3>
         
         {%if promoters|length==0 and unsurePromoters|length==0%}
         <h3><b>Warranting Investor</b> has the meaning given to it in Clause ~~refVninepointsixJrefV~~ (<em>General Provisions</em>).</h3>{%endif%}
@@ -1115,7 +1115,7 @@
         <h4>``refVNinePointSixIrefV``{%if promoters|length>0 or unsurePromoters|length>0%}The Promoter shall provide representations, warranties and indemnities with respect to the business and operations of the Company and covenants (including any non-compete) and other indemnities as may be required by any third party transferee{%if promoters|length==0 and unsurePromoters|length==0%}.{%elif promoters|length>0 or unsurePromoters|length>0%};</h4>{% endif %}{% endif %}{%if promoters|length==0 and unsurePromoters|length==0%} If any third party transferee requires representations, warranties and/or indemnities over and above those mentioned in Clause ~~refVNinePointSixHrefV~~ (<em>General Provisions</em>) then the Company shall provide such additional representations and warranties and each transferor of Securities agrees to (i) indemnify the third party transferee for breach of such additional representations or warranties, and (ii) provide such additional indemnities, in the ratio of the consideration received by each of them in such sale to the third party transferee;</h4>
         <h4>``refVninepointsixJrefV``If any transferor Investor agrees to provide representations, warranties and indemnities (<b>Warranting Investor</b>) required by the third party transferee while one or more other transferor Investors do not agree to provide such representations, warranties and/or indemnities, then, notwithstanding anything contained in this Agreement or any notices issued pursuant to this Clause ~~refVninerefV~~ (<em>Transfer of Securities</em>):</h4>
             <h4>the Warranting Investor shall be entitled to transfer or exchange its Securities at a price per Security which is higher than the price at which the third party acquires Securities from the other Investors; and</h4>
-            <h4>the Warranting Investor shall not be in breach of its relevant obligations under this Agreement to not offer more favourable terms and conditions to such third party on account of having provided such additional representations, warranties and/ or indemnities. <b>[Substantive Variable TP: End]</b></h4>{% endif %}
+            <h4>the Warranting Investor shall not be in breach of its relevant obligations under this Agreement to not offer more favourable terms and conditions to such third party on account of having provided such additional representations, warranties and/ or indemnities.</h4>{% endif %}
         <h4>If a Party fails to pay a sum due from it under this Agreement to another Party on the due date of payment in accordance with the provisions of this Agreement, that Party shall pay interest to that other Party on the overdue sum, from the due date of payment until the date on which its obligation to pay the sum is discharged, at the rate of [18]% (eighteen per cent) per annum. Such interest accrues and is payable from day to day.{%if conRadioWhoWillHaveExitRights=='Nil'%} [Drafting note: This draft assumes that some Shareholders will have exit rights. However, if in fact, none of the Shareholders have typical exit rights, please delete Clause ~~refVtenrefV~~ (<em>Exit</em>) and related definitions in the Definitions Clause accordingly.] {%endif%}</h4>
 
 <h1>``refVtenrefV``<b>EXIT</b></h1>
@@ -1182,7 +1182,7 @@
     <h2>``refVTenPointEightrefV``<b>Put Option {%if promoters|length>1 or unsurePromoters|length>1%}{%if (promoters|length!=0 or unsurePromoters|length!=0) and radioWillAnyShareholderBeEntitledToSwapItsSharesForListedSecurities == 'Yes'%}Swap {%endif%}{% endif %}</b></h2>
         <h3>At any time after the [7th (seventh)] anniversary of the Completion Date, Exit Right Holder(s)||	Consider the part(ies) that shall have the put option right. This template has been prepared on the basis that the Investors' have the right to sell its shares to the Promoter, but customise according to the transaction. || (the Put Holder) shall have the right (but not the obligation) (the Put Option) to require the Promoter to purchase all of the Shares held by the Put Holder in the Company (the Put Option Shares), and upon exercise of the Put Option, the Promoter shall be obliged to purchase (by itself or through any of its Affiliates or nominees) (the Put Transferee), the Put Option Shares at the Exit Price in accordance with this Clause ~~refVTenPointEightrefV~~ (<em>Put Option</em>).</h3>
             <h4>``refVTenPointEightArefV``The Put Option may be exercised by the Put Holder through delivery of a written notice to the Company and the Promoter(s) (a <b>Put Exercise Notice </b>in the form contained in ~~refVScheduleSixrefV~~ (<em>Form of Put Exercise Notice</em>)) notifying the Company and the Promoter(s) that the Put Option is being exercised by the Put Holder. The Put Exercise Notice shall be irrevocable once issued by the Put Holder.</h4>
-            <h4>``refVTenPointEightBrefV``Within [15 (fifteen)] days from the date of the Put Exercise Notice, the Promoter(s) may notify the Put Holder the name(s) of the Put Transferee(s) i.e. its Affiliate(s) or nominee(s) and related KYC information required by the Put Holder through whom the Promoter(s) shall complete the purchase of the Put Option Shares, Provided However That such Affiliate or nominee shall not require any approvals (regulatory or otherwise) in addition to those required by the Promoter(s) to complete the purchase of the Put Option Shares and provided further that notwithstanding any such notification, the Promoter(s) shall be jointly and severally liable with such Affiliate(s) or nominee(s) for performance of the Put Transferee's obligations under this Clause ~~refVTenPointEightrefV~~ (<em>Put Option</em>).<b>[Substantive Variable Swap: Start]</b></h4>
+            <h4>``refVTenPointEightBrefV``Within [15 (fifteen)] days from the date of the Put Exercise Notice, the Promoter(s) may notify the Put Holder the name(s) of the Put Transferee(s) i.e. its Affiliate(s) or nominee(s) and related KYC information required by the Put Holder through whom the Promoter(s) shall complete the purchase of the Put Option Shares, Provided However That such Affiliate or nominee shall not require any approvals (regulatory or otherwise) in addition to those required by the Promoter(s) to complete the purchase of the Put Option Shares and provided further that notwithstanding any such notification, the Promoter(s) shall be jointly and severally liable with such Affiliate(s) or nominee(s) for performance of the Put Transferee's obligations under this Clause ~~refVTenPointEightrefV~~ (<em>Put Option</em>).</h4>
             {% endif %}
             {%if promoters|length>1 or unsurePromoters|length>1%}{%if (promoters|length!=0 or unsurePromoters|length!=0) and radioWillAnyShareholderBeEntitledToSwapItsSharesForListedSecurities == 'Yes'%}
             <h4>``refVTenPointEightCrefV``The consideration for such purchase shall, at the discretion of the Promoter, be payable either: (i) in cash in the manner set out in Clause ~~refVTenPointEightFrefV~~ (<em>Put Option</em>), (ii) by transfer of securities which are listed on a recognised stock exchange in India (<b>Swap</b>) in the manner set out in Clause ~~refVTenPointEightGrefV~~ (<em>Put Option</em>), or (iii) a combination thereof.</h4>
@@ -1190,7 +1190,7 @@
             <h4>``refVTenPointEightErefV``The ratio for the Swap (the Swap Ratio) shall be determined by a Big Five Accounting Firm based on the price of the securities of such Swap Entity proposed to be transferred by the Promoter, determined in accordance with applicable SEBI regulations, Provided However That, the Swap, the Swap Entity identified by the Promoter and the securities of Swap Entity proposed to be transferred to the Put Holder pursuant to the Swap, should meet the following conditions:</h4>
                 <h5>such securities of the Swap Entity proposed to be transferred by the Promoter should, be free of all Encumbrances, frequently traded, be a freely saleable and marketable lot and should carry all rights generally available in relation to holder of such securities under Applicable Law;</h5>
                 <h5>such securities of the Swap Entity proposed to be transferred by the Promoter should not constitute 5% (five per cent) or more of the share capital or voting rights of the Swap Entity or confer control over the Swap Entity; and</h5>
-                <h5>the Swap should not result in the Put Holder being required to acquire any additional securities of the Swap Entity. [Substantive Variable Swap: End]</h5>
+                <h5>the Swap should not result in the Put Holder being required to acquire any additional securities of the Swap Entity.</h5>
             {%endif%}{% endif %}
             {%if promoters|length>0 or unsurePromoters|length>0%}
             <h4>``refVTenPointEightFrefV``To the extent that the consideration for the Securities is proposed to be discharged in cash, the Put Holder and the Put Transferee shall complete the sale and transfer of the Put Option Shares and remittance of the Exit Price on a spot delivery basis on the later of: (i) the day that is [30 (thirty)] days from the date of the Put Exercise Notice, and (ii) the day that is [10 (ten)] days from the date on which the regulatory approvals required to complete such sale and transfer, if any, are obtained (<b>Put Closing Date</b>)||	Timeline should be determined keeping in mind the timeline for determining FMV in terms of Clause ~~refVelevenrefV~~ (<em>Fair Market Value and Share Price Adjustments</em>).|| In connection with such sale, the Put Holder shall make, in favour of the Put Transferee on the Put Closing Date, representations and warranties and corresponding indemnities with respect to (A) good title to its Securities; (B) absence of Encumbrance on such Securities; (C) capacity, power and authority to sell its Securities; and (D) residency and tax matters under applicable foreign exchange and tax laws, as specified in the Put Exercise Notice {%if conRadioIsAnSPAOrSSAExecutedInConjunctionWithThisAgreement == 'Yes'%} similar to the representations, warranties and indemnities specified in the Investment Agreement{%endif%}.</h4>
@@ -1207,7 +1207,7 @@
             {%endif%}{% endif %}
             {%if promoters|length>0 or unsurePromoters|length>0%}
             <h4>``refVTenPointEightAKrefV``The Put Transferee shall bear all costs and expenses for the sale and transfer of the Put Option Shares including any amounts payable under Applicable Law as stamp duty on any documents executed for or in relation to the sale and transfer of the Put Option Shares.{%if radioIsTheTargetAnIndianCompany == 'No'%}||	Check with local counsel on whether there is any stamp duty payable for the transfer of the shares, and if so which Party is legally required to do so, and whether Parties can provide otherwise through contractual agreement. ||{% endif %} </h4>
-            <h4>``refVTenPointEightLrefV``The provisions of Clause ~~refVNinePointSixrefV~~ (General Provisions) shall apply mutatis mutandis to any sale of Securities held by the Put Holder pursuant to this Clause ~~refVTenPointEightrefV~~ (Put Option). [Substantive Variable 6: Start]</h4>{% endif %}
+            <h4>``refVTenPointEightLrefV``The provisions of Clause ~~refVNinePointSixrefV~~ (General Provisions) shall apply mutatis mutandis to any sale of Securities held by the Put Holder pursuant to this Clause ~~refVTenPointEightrefV~~ (Put Option).</h4>{% endif %}
             
     {%if conRadioWillAnyShareholderShareUpsideWithOtherShareholderUponExit == 'Yes'%}
     <h2>``refVTenPointNinerefV``<b>Upside Sharing</b></h2>
@@ -1816,12 +1816,12 @@
     </tbody>
 </table>
 {#Schedule Two#}
-<div custom-style="Schedule Heading 1">``refVScheduleTworefV``Reserved Matters|| List of Reserved matters to be considered in the context of the specific transaction and tailored accordingly. In deciding whether to include each item on this list, consider whether each item is essential in order to protect the interest of {% if nameTN|length>0 %}{{nameTN[0].name}}{% else %}True North{% endif %}, as excessive restrictions may hamper the efficient operation of the joint venture. However, if {% if nameTN|length>0 %}{{nameTN[0].name}}{% else %}True North{% endif %} is taking only a minority stake in the Company, it may be preferable a more extensive list of reserved matters for its benefit. Conversely, if {% if nameTN|length>0 %}{{nameTN[0].name}}{% else %}True North{% endif %} is taking a majority stake, a less extensive list of reserved matters may be preferable, and perhaps confining it to only those which are absolutely critical from a minority investor's perspective. However, on a 50:50 joint venture it might only be additional funding and alterations to the [Company's] constitution/share capital structure that {% if nameTN|length>0 %}{{nameTN[0].name}}{% else %}True North{% endif %} might want to have as shareholder reserved matters, reflecting the fact that it has a large degree of control by virtue of its 50% (50 per cent) shareholding (i.e. not even an ordinary resolution can be passed without its consent).|| [Substantive Variable 3a: Start]</div>
+<div custom-style="Schedule Heading 1">``refVScheduleTworefV``Reserved Matters|| List of Reserved matters to be considered in the context of the specific transaction and tailored accordingly. In deciding whether to include each item on this list, consider whether each item is essential in order to protect the interest of {% if nameTN|length>0 %}{{nameTN[0].name}}{% else %}True North{% endif %}, as excessive restrictions may hamper the efficient operation of the joint venture. However, if {% if nameTN|length>0 %}{{nameTN[0].name}}{% else %}True North{% endif %} is taking only a minority stake in the Company, it may be preferable a more extensive list of reserved matters for its benefit. Conversely, if {% if nameTN|length>0 %}{{nameTN[0].name}}{% else %}True North{% endif %} is taking a majority stake, a less extensive list of reserved matters may be preferable, and perhaps confining it to only those which are absolutely critical from a minority investor's perspective. However, on a 50:50 joint venture it might only be additional funding and alterations to the [Company's] constitution/share capital structure that {% if nameTN|length>0 %}{{nameTN[0].name}}{% else %}True North{% endif %} might want to have as shareholder reserved matters, reflecting the fact that it has a large degree of control by virtue of its 50% (50 per cent) shareholding (i.e. not even an ordinary resolution can be passed without its consent).||</div>
 {%if conRadioHowManyListsOfReservedMatterRightsWillTheSHAInclude=="2" or conRadioHowManyListsOfReservedMatterRightsWillTheSHAInclude=="3"%}
-<div custom-style="Schedule Heading 2">``refVPartAScheduleTworefV``Shareholder Reserved Matters [Substantive Variable 3a: End] [[Substantive Variable Rm: Start]</div>{% endif %}
+<div custom-style="Schedule Heading 2">``refVPartAScheduleTworefV``Shareholder Reserved Matters</div>{% endif %}
 {% if radioIsTheFirstListOFReservedMattersAgreed == 'No' %}
 <div custom-style="Schedule Heading 6">Amendment of constitutional documents;</div>
-<div custom-style="Schedule Heading 6">Any increase, decrease, buy back, redemption, reduction or other alterations to its authorized share capital or issued share capital including any private placement or public issue of securities, issuance of securities with differential voting rights, issue or redemption of preference shares, grant of options for securities and issue of sweat equity, but excluding (i) any issue of New Securities contemplated in Clause ~~refVEightrefV~~ (<em>Further Funding</em>) and any change to authorized capital to facilitate such issue, (ii) any transfer of Shares that is permitted under Clause ~~refVNinerefV~~ (<em>Transfer of Securities</em>) or 10 (<em>Exit</em>) of this Agreement{%if radioWillTheExitOptionIncludeABuyBack == 'Yes'%}, and (iii) any [buy-back] of Shares specifically contemplated in this Agreement|| Bracketed portion to be included when a Shareholder has the right to require the Company to redeem or buy-back its shares under any circumstances.||{% endif %} [Substantive Variable PS: Start]{%if radioWillThereBeAnyPreferenceSharesOutstandingOrIssued == 'Yes'%}, and any redemption of preference shares specifically contemplated in this Agreement{%if transactionDoc == 'Yes'%} and/ or the Transaction Documents{% endif %} <strong>[Substantive Variable PS: End]</strong>{% endif %};</div>
+<div custom-style="Schedule Heading 6">Any increase, decrease, buy back, redemption, reduction or other alterations to its authorized share capital or issued share capital including any private placement or public issue of securities, issuance of securities with differential voting rights, issue or redemption of preference shares, grant of options for securities and issue of sweat equity, but excluding (i) any issue of New Securities contemplated in Clause ~~refVEightrefV~~ (<em>Further Funding</em>) and any change to authorized capital to facilitate such issue, (ii) any transfer of Shares that is permitted under Clause ~~refVNinerefV~~ (<em>Transfer of Securities</em>) or 10 (<em>Exit</em>) of this Agreement{%if radioWillTheExitOptionIncludeABuyBack == 'Yes'%}, and (iii) any [buy-back] of Shares specifically contemplated in this Agreement|| Bracketed portion to be included when a Shareholder has the right to require the Company to redeem or buy-back its shares under any circumstances.||{% endif %} {%if radioWillThereBeAnyPreferenceSharesOutstandingOrIssued == 'Yes'%}, and any redemption of preference shares specifically contemplated in this Agreement{%if transactionDoc == 'Yes'%} and/ or the Transaction Documents{% endif %}{% endif %};</div>
     {%if radioShouldTheAgreementHaveProvisionsOnAgreedESOP == 'Yes'%}
 <div custom-style="Schedule Heading 6">Amendments to the ESOP Plan or approval or adoption of, or variation to, any other stock option scheme, stock award scheme or other scheme for providing money to purchase or subscribe to Shares to be held in trust for employees, directors etc.;</div>
 {%elif radioShouldTheAgreementHaveProvisionsOnAgreedESOP == 'No'%}
@@ -1856,30 +1856,24 @@
 <div custom-style="Schedule Heading 6">Amending the name of any Group Company;</div>
 <div custom-style="Schedule Heading 6">Use of [the Investment Amount] [<em>add any other relevant amounts</em>] other than as provided{%if transactionDoc == 'Yes'%} in the Transaction Documents{% endif %}{%if radioWillThereBeAnAgreedBusinessPlan == 'Yes'%}/ in the Business Plan{% endif %};</div>
 <div custom-style="Schedule Heading 6"> [any other matters];|| To be added depending on the requirements of the transaction.|| or</div>
-<div custom-style="Schedule Heading 6">Delegation of authority or powers in relation to any of the aforementioned matters to any Person.] <strong>[SUBSTANTIVE VARIABLE RM: END]</strong>
+<div custom-style="Schedule Heading 6">Delegation of authority or powers in relation to any of the aforementioned matters to any Person.]
 </div>
 {% elif radioIsTheFirstListOFReservedMattersAgreed == 'Yes' %}
 {{firstListOfReservedMatters}}
 {% endif %}
 {%if conRadioHowManyListsOfReservedMatterRightsWillTheSHAInclude=="2" or conRadioHowManyListsOfReservedMatterRightsWillTheSHAInclude=="3"%}
-<p>
-    <strong>[Substantive Variable 3A: Start]</strong>
-</p>
 <div custom-style="Schedule Heading 2">``refVPartBScheduleTworefV``Special Matters</div>
 {% if radioIsTheSecondListOFReservedMattersAgreed == 'No' %}
-<p>[<em>Insert</em>] <strong>[Substantive Variable 3A: End]</strong>
+<p>[<em>Insert</em>]
 </p>
 {% elif radioIsTheSecondListOFReservedMattersAgreed == 'Yes' %}
 {{secondListOfReservedMatters}}
 {% endif %}
 {% endif %}
 {%if conRadioHowManyListsOfReservedMatterRightsWillTheSHAInclude=="3"%}
-<p>
-    <strong>[Substantive Variable 3B: Start]</strong>
-</p>
 <div custom-style="Schedule Heading 2">``refVPartCScheduleTworefV``Other Matters</div>
 {% if radioIsTheThirdListOFReservedMattersAgreed == 'No' %}
-<p>[<em>Insert</em>] <strong>[Substantive Variable 3B: End]</strong>
+<p>[<em>Insert</em>]
 </p>
 {% elif radioIsTheThirdListOFReservedMattersAgreed == 'Yes' %}
 {{thirdListOfReservedMatters}}
@@ -1945,9 +1939,7 @@
 <div custom-style="Unnumbered Heading3">[insert name of Transferor Shareholder]	)</div>
 <div custom-style="Unnumbered Heading3">___________________________	Signature of Authorised Signatory</div>
 <div custom-style="Unnumbered Heading3">___________________________	Name of Authorised Signatory]</div>
-<p>
-    <strong>[Substantive Variable 9: Start]</strong>
-</p>
+
 {%if radioIsADeadlockResolutionMechanismRequired == 'Yes'%}
 {#Schedule Four#}
 <div custom-style="Schedule Heading 1">``refVScheduleFourrefV``Deadlock|| This [~~refVScheduleFourrefV~~ (<em>Deadlock</em>)] sets out three suggested alternative approaches to an unbreakable deadlock situation, which can be customised according to the requirements of the transaction and {% if nameTN|length>0 %}{{nameTN[0].name}}{% else %}True North{% endif %}'s position in the specific transaction. Use these options alternatively. Consider also whether it is appropriate to include such provisions dealing with the consequences of a Deadlock situation. It may be better for the agreement to be silent on this point, to avoid a party creating a Deadlock situation which it can then exploit/gaming the situation. This should be balanced against the desire for certainty.||
@@ -2175,13 +2167,11 @@
         </tr>
     </tbody>
 </table>
-<p>
-    <strong>[Substantive Variable ESOP: Start]</strong>
-</p>
+
 {%if radioShouldTheAgreementHaveProvisionsOnAgreedESOP == 'Yes'%}
 {#Schedule Eight#}
 <div custom-style="Schedule Heading 1">``refVScheduleEightrefV``ESOP Plan</div>
-<p>[<em>insert</em>]<strong> [Substantive Variable ESOP: End]</strong>
+<p>[<em>insert</em>]
 </p>
 {% endif %}
 {#Signature pages#}
