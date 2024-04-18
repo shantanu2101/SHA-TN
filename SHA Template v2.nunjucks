@@ -148,7 +148,7 @@
             {% endif %}
         {% endif %}
     {% endfor %}
-    <li>{{company[0].name}}, a company incorporated under [law under which the Company is constituted]|| For instance: the laws of India; Small Industries Development Bank of India Act, 1989; Articles of Agreement among its member countries including the Republic of India; Indian Trusts Act 1882 and registered with the Securities and Exchange Board of India as a venture capital fund under the Securities and Exchange Board of India (Venture Capital Fund) Regulations 1996; Limited Liability Partnership Act 2008, Companies Act, 1956, Companies Act 2013 or other Applicable Law.||  with [identification][registration] number [number], having its registered office at [address of registered office] (hereafter Company).|| As this Agreement relates specifically to the Company and cannot be assigned by the Company, wording regarding permitted successors and assigns has not been included. If the joint venture vehicle is an entity other than a company, tailor as required. This Agreement assumes a company is the joint venture vehicle.||</li>
+    <li>{{targetCompany}}, a company incorporated under [law under which the Company is constituted]|| For instance: the laws of India; Small Industries Development Bank of India Act, 1989; Articles of Agreement among its member countries including the Republic of India; Indian Trusts Act 1882 and registered with the Securities and Exchange Board of India as a venture capital fund under the Securities and Exchange Board of India (Venture Capital Fund) Regulations 1996; Limited Liability Partnership Act 2008, Companies Act, 1956, Companies Act 2013 or other Applicable Law.||  with [identification][registration] number [number], having its registered office at [address of registered office] (hereafter Company).|| As this Agreement relates specifically to the Company and cannot be assigned by the Company, wording regarding permitted successors and assigns has not been included. If the joint venture vehicle is an entity other than a company, tailor as required. This Agreement assumes a company is the joint venture vehicle.||</li>
 {% else %}
     {#When company is not party to the SHA#}
     {% for x in shareholders %}
@@ -559,16 +559,48 @@
         <h3><b>Non-quorate Board Meeting </b>has the meaning given to it in Clause ~~refVfourpointfiveDrefV~~ (<em>Meetings &amp; Quorum; Decisions</em>).</h3>
         <h3><b>Non-quorate General Meeting </b>has the meaning given to it in Clause ~~refVfivepointsixDrefV~~ (<em>Decision making</em>).</h3>
         
-        <h3><b>Non-Selling Shareholder(s)</b> shall mean {%if rofo|length==1%}with reference to Clause ~~refVninepointfourrefV~~ (Right of First Offer), {{rofo[0].nonSelling}}{%elif rofo|length>1%}with reference to Clause ~~refVninepointfourrefV~~ (Right of First Offer),</h3>
-            {% for x in rofo %}
-                <h4>in relation to {{x.selling[0].name}}, {{x.nonSelling}}{%if loop.last==false%};{%endif%}{%if loop.index==(rofo|length-1)%} and{%endif%}{%if loop.last==true%}.{% endif %}</h4>
-            {% endfor %}
-            {% endif %} 
-            {% if tag|length>0 %}and with reference to Clause ~~refVninepointfiverefV~~ (Tag Along Right):</h3>
-            {% for x in tag %}
-                <h4>in relation to {{x.selling[0].name}}, {{x.nonSelling}}{%if loop.last==false%};{%endif%}{%if loop.index==(tag|length-1)%} and{%endif%}{%if loop.last==true%}.{% endif %}</h4>
-            {% endfor %}
+        {%if rofo|length>0 and tag|length>0%}
+    <h3>
+        <b>Non-Selling Shareholder(s)</b> shall mean {%if rofo|length==1%}with reference to Clause ~~refVninepointfourrefV~~ (Right of First Offer), {{rofo[0].nonSelling}}
+        {%elif rofo|length>1%}with reference to Clause ~~refVninepointfourrefV~~ (Right of First Offer),</h3>
+        {% for x in rofo %}
+            <h4>in relation to {{x.selling[0].name}}, {{x.nonSelling}}{%if loop.index<(rofo|length-1)%};{%endif%}{%if loop.index==(rofo|length-1)%} and{%endif%}{%if loop.last==true%}.{% endif %}
+                    </h4>
+                {% endfor %}
             {% endif %}
+            <h3>and with reference to Clause ~~refVninepointfiverefV~~ (Tag Along Right):</h3>
+            {% for x in tag %}
+                <h4>in relation to {{x.selling[0].name}}, {{x.nonSelling}}
+                {%if loop.index<(tag|length-1)%};{%endif%}
+                {%if loop.index==(tag|length-1)%} and{%endif%}
+                {%if loop.last==true%}.{% endif %}
+                        </h4>
+                    {% endfor %}
+                {%elif rofo|length>0 and tag|length==0%}
+                    <h3>
+                        <b>Non-Selling Shareholder(s)</b> shall mean {%if rofo|length==1%}with reference to Clause ~~refVninepointfourrefV~~ (Right of First Offer), {{rofo[0].nonSelling}}
+                        {%elif rofo|length>1%}with reference to Clause ~~refVninepointfourrefV~~ (Right of First Offer),</h3>
+                    {% endif %}
+                    {% for x in rofo %}
+                        <h4>in relation to {{x.selling[0].name}}, {{x.nonSelling}}
+                        {%if loop.index<(rofo|length-1)%};{%endif%}
+                        {%if loop.index==(rofo|length-1)%} and{%endif%}
+                        {%if loop.last==true%}.{% endif %}
+                                </h4>
+                            {% endfor %}
+                        {%elif rofo|length==0 and tag|length>0%}
+                            <h3>
+                                <b>Non-Selling Shareholder(s)</b> shall mean {%if tag|length==1%}with reference to Clause ~~refVninepointfiverefV~~ (Tag Along Right), {{tag[0].nonSelling}}
+                                {%elif tag|length>1%}with reference to Clause ~~refVninepointfiverefV~~ (Tag Along Right),</h3>
+                                {% for x in tag %}
+                                    <h4>in relation to {{x.selling[0].name}}, {{x.nonSelling}}
+                                    {%if loop.index<(tag|length-1)%};{%endif%}
+                                    {%if loop.index==(rofo|length-1)%} and{%endif%}
+                                    {%if loop.last==true%}.{% endif %}
+                                            </h4>
+                                        {% endfor %}
+                                    {% endif %}
+                                {% endif %}
         
         <h3><b>Non-U.S. Official </b>has the meaning given to it in Clause ~~refVthirteenpointoneAonerefV~~ (<em>ABC and AML</em>).</h3>
         <h3><b>Notice</b> has the meaning given to it in Clause ~~refVnineteenpointonerefV~~ (<em>Method of service</em>).</h3>
@@ -675,10 +707,33 @@
 
         <h3><b>Securities Regulator</b> or <b>SEBI</b> means Securities and Exchange Board of India.{%if radioIsTheTargetAnIndianCompany == 'No'%}||	If the Company is formed in a jurisdiction other than India, this definition may need to be revised. ||{% endif %}<b></b></h3>
         
-        <h3><b>Selling Shareholder</b> means {%if rofo|length==1%}with reference to Clause ~~refVninepointfourrefV~~ (Right of First Offer), {{rofo[0].selling[0].name}}{%elif rofo|length>1%}with reference to Clause ~~refVninepointfourrefV~~ (Right of First Offer), each of {%for x in rofo%}{{x.selling[0].name}}{%if loop.index<(rofo|length-1)%},{%elif loop.index==(rofo|length-1)%} and {% endif %}{% endfor %}{% if tag|length==0 %}.{% endif %}
-        {% endif %} 
-        {% if tag|length>0 %}, and with reference to Clause ~~refVninepointfiverefV~~ (Tag Along Right) each of {%for x in tag%}{{x.selling[0].name}}{%if loop.index<(tag|length-1)%},{%elif loop.index==(tag|length-1)%} and {% endif %}{%if loop.last==true%}.{%endif%} {% endfor %}
-        {% endif %}</h3>
+        {%if rofo|length>0 and tag|length>0 %}
+        <h3><b>Selling Shareholder</b> means {%if rofo|length==1%}with reference to Clause ~~refVninepointfourrefV~~ (Right of First Offer), {{rofo[0].selling[0].name}}
+                {%elif rofo|length>1%}with reference to Clause ~~refVninepointfourrefV~~ (Right of First Offer), each of {%for x in rofo%}{{x.selling[0].name}}
+                                {%if loop.index<(rofo|length-1)%},{%elif loop.index==(rofo|length-1)%} and {% endif %}
+                        {% endfor %}
+                {% endif %} with reference to Clause ~~refVninepointfiverefV~~ (Tag Along Right) each of {%for x in tag%}{{x.selling[0].name}}
+                        {%if loop.index<(tag|length-1)%},{%elif loop.index==(tag|length-1)%} and {% endif %}
+                        {%if loop.last==true%}.{%endif%}
+                        {% endfor %}
+
+                {%elif rofo|length>0 and tag|length==0 %}
+                        <h3>
+                                <b>Selling Shareholder</b> means {%if rofo|length==1%}with reference to Clause ~~refVninepointfourrefV~~ (Right of First Offer), {{rofo[0].selling[0].name}}
+                                {%elif rofo|length>1%}with reference to Clause ~~refVninepointfourrefV~~ (Right of First Offer), each of {%for x in rofo%}{{x.selling[0].name}}
+                                                {%if loop.index<(rofo|length-1)%},{%elif loop.index==(rofo|length-1)%} and {%elif loop.last==true%}
+                                                {% endif %}.{% endfor %}
+                                {% endif %}
+
+                        {%elif rofo|length==0 and tag|length>0 %}
+                                <h3>
+                                        <b>Selling Shareholder</b> means {%if tag|length==1%}with reference to Clause ~~refVninepointfiverefV~~ (Tag Along Right), {{tag[0].selling[0].name}}
+                                        {%elif tag|length>1%}with reference to Clause ~~refVninepointfiverefV~~ (Tag Along Right), each of {%for x in tag%}{{x.selling[0].name}}
+                                                        {%if loop.index<(tag|length-1)%},{%elif loop.index==(tag|length-1)%} and {%elif loop.last==true%}
+                                                        {% endif %}.{% endfor %}
+                                        {% endif %}
+            </h3>
+            {% endif %}
         
 
         <h3><b>Share</b> means the ordinary equity shares in the capital of the Company [having the rights set out in the Articles].||	Where the Company has more than one type of security on issue (as described in the Recitals), consider adding a definition for each type of security. If any securities are convertible in nature, the terms attaching to them should be specified in a Schedule or cross referenced to Articles or other constituent document of the Company which sets out those terms. ||</h3>
@@ -734,7 +789,7 @@
         {%if rofo|length>0 or tag|length>0%}
         <h3><b>Transferee</b>, in relation to a Selling Shareholder, means a Person that is not such Selling Shareholder's Affiliate{%if promoters|length>0 or unsurePromoters|length>0%}[, and, in relation to the Promoter, means a Person that is not the Promoter's Affiliate]{% endif %}.</h3>{%endif%}
 
-        <h3><b>Transferring Shareholder </b>has the meaning given to it in Clause ~~refVninepointtworefV~~<!--vasu refrenced right but does not reflect--> (<em>Transfers to Affiliates</em>).</h3>
+        <h3><b>Transferring Shareholder </b>has the meaning given to it in Clause ~~refVninepointtworefV~~ (<em>Transfers to Affiliates</em>).</h3>
         
         {%if conRadioWillAnyShareholderShareUpsideWithOtherShareholderUponExit == 'Yes'%}
         <h3><b>{% if nameTN|length>0 %}{{nameTN[0].name}}{% else %}True North{% endif %}</b> means [{% if nameTN|length>0 %}{{nameTN[0].name}}{% else %}True North{% endif %}. [<b>Drafting note:</b> to be confirmed by TN team]</h3>
@@ -821,7 +876,7 @@
         <h3>Subject to the provisions of Applicable Laws, upon receiving the recommendation of any Nominating Shareholder in this regard, the Company and other Shareholders shall cause the Board to appoint an alternate Director, to attend in person instead of, and act for, such Nominating Shareholder's Nominee Director (the <b>Original Director</b>), during such Original Director's absence at any meeting of the Board. Any decision or action of an alternate Director taken in person at such meeting of the Board, shall be deemed to be that of the Original Director whose alternate he / she is. The appointment of any alternate Director(s) shall be taken up in any meeting of the Board prior to taking up any other item on the agenda.{%if radioIsTheTargetAnIndianCompany == 'No'%}||	In most jurisdictions, the appointment of alternate directors is ordinarily allowed, but check with local counsel if there are any specific concerns or issues to take note when appointing alternate directors. ||{% endif %}</h3>
     
     <h2><b>Appointment and removal</b></h2>
-        <h4>A Nominee Director may be removed from office only on the recommendation (by written notice) of the relevant Nominating Shareholder and the vacancy thus created on the Board may be filled by such Nominating Shareholder by written notice to the Company [and the other Shareholders]. Any such removal shall become effective on the date fixed in such notice, or upon the delivery of such notice to the Company, whichever is later, Provided However That each Nominating Shareholder agrees that in the event the number of Shares held by such Nominating Shareholder (subject to Clause ~~refVninepointsixGrefV~~<!--vasu referenced right but does not reflect--> (<em>General Provisions</em>)) falls below the Fall-Away Threshold, its Nominee Director(s) shall resign and upon failure to so resign, such Nominee Director(s) may be removed from office by approval of the Shareholders in accordance with Applicable Laws. Each Shareholder agrees to undertake all necessary action to procure the resignation or removal of any Nominee Director in accordance with this <!--reference doubt --> Clause [~~refVfourrefV~~ (<em>Board of Directors</em>)/ ~~refVfourpointthreerefV~~ (<em>Appointment and removal</em>)].</h4>
+        <h4>A Nominee Director may be removed from office only on the recommendation (by written notice) of the relevant Nominating Shareholder and the vacancy thus created on the Board may be filled by such Nominating Shareholder by written notice to the Company [and the other Shareholders]. Any such removal shall become effective on the date fixed in such notice, or upon the delivery of such notice to the Company, whichever is later, Provided However That each Nominating Shareholder agrees that in the event the number of Shares held by such Nominating Shareholder (subject to Clause ~~refVNinePointSixGrefV~~ (<em>General Provisions</em>)) falls below the Fall-Away Threshold, its Nominee Director(s) shall resign and upon failure to so resign, such Nominee Director(s) may be removed from office by approval of the Shareholders in accordance with Applicable Laws. Each Shareholder agrees to undertake all necessary action to procure the resignation or removal of any Nominee Director in accordance with this <!--reference doubt --> Clause [~~refVfourrefV~~ (<em>Board of Directors</em>)/ ~~refVfourpointthreerefV~~ (<em>Appointment and removal</em>)].</h4>
         <h4>Any Independent Director may be removed from office by approval of the Shareholders in accordance with Applicable Laws. Any replacement for such Independent Directors shall also be appointed only in the manner prescribed in Clause ~~refVfourpointAtworefV~~ (<em>Board composition</em>).</h4>
         <h4>The Shareholders shall cause the Directors nominated by them to vote at Board meetings to effect the appointment of any Nominee Director or alternate Director or Independent Director, in the manner stated above, as the first item of business at the next occurring Board meeting.</h4>
         <h4>The directors of the Company shall not be required to hold any qualification shares.{%if radioIsTheTargetAnIndianCompany == 'No'%}||	If the Company is incorporated outside India, check with local counsel whether directors need to hold shares in the Company. ||{% endif %}</h4>
@@ -945,7 +1000,7 @@
 
         <h4>Shares issued in a {%if radioWillExitOptionsIncludeQIPO == 'Yes'%}QIPO or any other{%endif%} IPO the terms of which are approved in advance as a Reserved Matter|| Please check against the list of Reserved Matters. If this is not a Reserved Matter, please delete the exception or make other necessary changes to reflect the commercial intent. ||{%if radioWillThereBeAnyPreferenceSharesOutstandingOrIssued == 'Yes'%}; and</h4>
         <h4>Shares issued upon conversion of preference shares or as a dividend or distribution on the preference shares{%if conRadioWhoWillHaveTheAntiDilutionRightsUnderThisAgreement!="Nil"%}; and</h4>
-        <h4>Securities issued pursuant to Clause<!--vasu reference sahi hain but reflect nahi ho raha--> ~~refVeightpointsixrefV~~ (<em>Anti-Dilution</em>).</h4>
+        <h4>Securities issued pursuant to Clause ~~refVeightpointsixrefV~~ (<em>Anti-Dilution</em>).</h4>
             {%elif conRadioWhoWillHaveTheAntiDilutionRightsUnderThisAgreement == "Nil"%};</h4>
             {% endif %}
             {%elif radioWillThereBeAnyPreferenceSharesOutstandingOrIssued == 'No'%};</h4>
@@ -1569,7 +1624,7 @@
         <h4>``refVtwentypointfiveIrefV``Notwithstanding any provision of this Clause ~~refVtwentyrefV~~  (<em>Dispute Resolution</em>) (including Clause ~~refVtwentypointfiveGrefV~~ (<em>Arbitration</em>)), nothing in this Clause ~~refVtwentyrefV~~  (<em>Dispute Resolution</em>) prevents any Party from applying to a court of competent jurisdiction:</h4>
             <h5>for injunctive relief, a preservation order or seek other interim relief; or</h5>
             <h5>to seek enforcement and judgement on any arbitral award or determination made under this Agreement.</h5>
-        <h4>Notwithstanding any of the foregoing provisions of this Clause ~~refVtwentypointfourrefV~~<!--vasu reference sahi hain but reflect nahi ho raha-->  (<em>Arbitration</em>), in the event that a Dispute subsists and, at that time, there also subsists another dispute, controversy, difference or claim arising between those same Parties in relation to or connected with this Agreement{%if transactionDoc == 'Yes'%} or another Transaction Document{% endif %} and which is already the subject of existing arbitration proceedings, the Parties shall (unless they otherwise agree in writing) procure (including by the exercise of rights and discretions available to them under this Agreement) that the Dispute is referred to and heard by the sole arbitrator (or arbitral tribunal, as the case may be) hearing the existing arbitration proceedings.</h4>
+        <h4>Notwithstanding any of the foregoing provisions of this Clause ~~refVtwentypointfourrefV~~ (<em>Arbitration</em>), in the event that a Dispute subsists and, at that time, there also subsists another dispute, controversy, difference or claim arising between those same Parties in relation to or connected with this Agreement{%if transactionDoc == 'Yes'%} or another Transaction Document{% endif %} and which is already the subject of existing arbitration proceedings, the Parties shall (unless they otherwise agree in writing) procure (including by the exercise of rights and discretions available to them under this Agreement) that the Dispute is referred to and heard by the sole arbitrator (or arbitral tribunal, as the case may be) hearing the existing arbitration proceedings.</h4>
         <h4>Notwithstanding the existence of any Dispute or the conduct of any arbitration proceedings pursuant to this Agreement, this Agreement shall remain in full force and effect and the Parties shall continue to perform their obligations hereunder.</h4>
 <h1>``refVTwentyOnerefV``<b>GOVERNING LAW AND JURISDICTION</b></h1>
     <h2>``refVtwentyonepointonerefV``<b>Governing law</b></h2>
@@ -2184,7 +2239,7 @@
 <p>Name:</p>
 <p>Designation:</p>
 <p>[<em>to be tailored for the relevant Parties and local law considerations</em>]</p>
-<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
 <p>Signature page to the Shareholders' Agreement [dated [<em>insert agreement date</em>]] amongst {% for x in shareholders %}
     {% if loop.index==(shareholders|length-1) %}
         {% if x.partyType=="TrueNorth Entities" %}
@@ -2217,7 +2272,7 @@
 <p>Name:</p>
 <p>Designation:</p>
 <p>[<em>to be tailored for the relevant Parties and local law considerations</em>]</p>
-<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
 <p>Signature page to the Shareholders' Agreement [dated [<em>insert agreement date</em>]] amongst {% for x in shareholders %}
     {% if loop.index==(shareholders|length-1) %}
         {% if x.partyType=="TrueNorth Entities" %}
